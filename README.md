@@ -1,18 +1,19 @@
-# Resettable website — Version 1
+# Resettable Website — Version 2
 
-This is the first coded concept for resettable.co.uk.
+This version follows the agreed direction:
+- Original clean layout retained
+- No portfolio section
+- Hero has one CTA: Request a Reset
+- No WhatsApp or Instagram CTA in the hero
+- FAQs retained
+- How It Works, FAQs and Request Your Reset are separate sections
+- Footer is the main contact/social area
+- Logo treatment puts a subtle house shape around the R that remains part of Resettable
+- Hero expects the uploaded flyer image as `hero-image.jpg`
 
-Files:
-- index.html — website structure/content
-- styles.css — visual design and responsive layout
-- script.js — mobile menu, scroll reveals, portfolio modal and dynamic year
-
-Important before launch:
-1. Replace the portfolio visual placeholders with the real Resettable before/after photographs.
-2. Replace the WhatsApp link with the real WhatsApp number/link.
-3. Confirm the preferred email address.
-4. Add the final logo asset if you want the exact existing logo rather than the text/house placeholder.
-5. Add any final pricing, service areas and testimonials.
-6. Host the files and connect resettable.co.uk through GoDaddy DNS.
-
-The design direction follows the existing Resettable material: warm cream, sage/olive green, dark green text, calm editorial typography, generous whitespace and real project photography.
+Before launch:
+1. Put the flyer image in this folder and name it `hero-image.jpg`.
+2. Replace Instagram `href="#"` links with the real Instagram profile.
+3. Connect the request form to an email/form service.
+4. Confirm phone/email details.
+5. Finalise the exact logo if needed.
