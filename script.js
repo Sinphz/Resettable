@@ -21,32 +21,20 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-const modal = document.querySelector('#project-modal');
-const title = document.querySelector('#modal-title');
-const copy = document.querySelector('#modal-copy');
-
-document.querySelectorAll('.project').forEach(project => {
-  project.addEventListener('click', () => {
-    title.textContent = project.dataset.title;
-    copy.textContent = project.dataset.copy;
-    modal.showModal();
-  });
-});
-
-document.querySelector('.modal-close').addEventListener('click', () => modal.close());
-modal.addEventListener('click', e => {
-  if (e.target === modal) modal.close();
-});
-
-document.querySelector('#year').textContent = new Date().getFullYear();
-
-
 const resetForm = document.querySelector('#reset-form');
 const formStatus = document.querySelector('.form-status');
 
 resetForm?.addEventListener('submit', (event) => {
   event.preventDefault();
+
   if (formStatus) {
-    formStatus.textContent = 'Form layout is ready. We’ll connect it to Resettable’s email before launch.';
+    formStatus.textContent =
+      'Thanks — the form is working. We’ll connect it to Resettable’s email before launch.';
   }
 });
+
+const year = document.querySelector('#year');
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
