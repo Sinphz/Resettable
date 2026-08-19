@@ -1,0 +1,19 @@
+Replace these three files in your current Resettable folder:
+- index.html
+- styles.css
+- script.js
+
+Keep:
+- resettable-logo.png
+- home.jpg
+- outdoor.jpg
+- workspaces.jpg
+
+Changes:
+- Header logo smaller
+- Footer logo smaller and height forced to auto to stop distortion
+- Request form restored inside Ready for a Fresh Start
+- WhatsApp / Email / Instagram buttons remain below the form
+- Instagram links to @Resettableco
+
+Hard refresh Live Server afterwards: Ctrl+Shift+R.
