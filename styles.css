@@ -809,3 +809,88 @@ main .eyebrow {
     font-size: .68rem !important;
   }
 }
+
+
+/* ===== Global heading refinement =====
+   Keep body/content copy at the current size.
+   Use DM Sans consistently for headings on desktop, tablet and phone.
+*/
+
+/* Hero H1 */
+main .hero h1 {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 2.3rem !important;
+  line-height: 1.14 !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.03em !important;
+}
+
+/* Keep only the word "reset" as the softer serif accent */
+main .hero h1 em {
+  font-family: "Playfair Display", serif !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+}
+
+/* Main section headings */
+main h2,
+main .contact h2 {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 1.5rem !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Smaller headings inside sections */
+main h3,
+main .reset-card-copy strong {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+/* Tablet */
+@media (min-width: 561px) and (max-width: 850px) {
+  main .hero h1 {
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 1.9rem !important;
+  }
+
+  main .hero h1 em {
+    font-family: "Playfair Display", serif !important;
+  }
+
+  main h2,
+  main .contact h2 {
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 1.32rem !important;
+  }
+
+  main h3,
+  main .reset-card-copy strong {
+    font-family: "DM Sans", sans-serif !important;
+  }
+}
+
+/* Phone */
+@media (max-width: 560px) {
+  main .hero h1 {
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 1.58rem !important;
+    line-height: 1.16 !important;
+  }
+
+  main .hero h1 em {
+    font-family: "Playfair Display", serif !important;
+  }
+
+  main h2,
+  main .contact h2 {
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 1.18rem !important;
+  }
+
+  main h3,
+  main .reset-card-copy strong {
+    font-family: "DM Sans", sans-serif !important;
+  }
+}
