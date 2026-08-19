@@ -527,3 +527,285 @@ footer > p {
     opacity: 1 !important;
   }
 }
+
+
+/* ===== Global content typography refinement =====
+   Header and footer typography are intentionally left unchanged.
+*/
+
+/* Hero headline: cleaner, smaller, closer to the Resettable wordmark */
+main .hero h1 {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 3rem !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.035em !important;
+  font-weight: 600 !important;
+  max-width: 720px;
+}
+
+/* Keep a little character on the word "reset" */
+main .hero h1 em {
+  font-family: "Playfair Display", serif !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+}
+
+/* Main section headings */
+main h2 {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 2rem !important;
+  line-height: 1.18 !important;
+  letter-spacing: -0.025em !important;
+  font-weight: 600 !important;
+}
+
+/* Section/card subheadings */
+main h3 {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 1rem !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0 !important;
+  font-weight: 600 !important;
+}
+
+/* Hero/supporting copy */
+main .hero .intro,
+main .hero-text {
+  font-size: 1rem !important;
+  line-height: 1.55 !important;
+}
+
+/* General section copy */
+main .service-card p,
+main .step p,
+main .faq details p,
+main .contact-inner > p:not(.eyebrow),
+main .reset-card-copy small,
+main .small-note {
+  font-size: .9rem !important;
+  line-height: 1.55 !important;
+}
+
+/* Card titles */
+main .reset-card-copy strong {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+}
+
+/* Small labels stay subtle */
+main .eyebrow {
+  font-size: .67rem !important;
+  letter-spacing: .15em !important;
+}
+
+/* Contact section heading was especially oversized */
+main .contact h2 {
+  font-size: 2.1rem !important;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+  main .hero h1 {
+    font-size: 2.4rem !important;
+  }
+
+  main h2 {
+    font-size: 1.75rem !important;
+  }
+
+  main .contact h2 {
+    font-size: 1.85rem !important;
+  }
+}
+
+/* Phone */
+@media (max-width: 560px) {
+  main .hero h1 {
+    font-size: 2rem !important;
+    line-height: 1.14 !important;
+  }
+
+  main h2 {
+    font-size: 1.55rem !important;
+  }
+
+  main h3 {
+    font-size: .95rem !important;
+  }
+
+  main .hero .intro,
+  main .hero-text {
+    font-size: .94rem !important;
+  }
+
+  main .contact h2 {
+    font-size: 1.65rem !important;
+  }
+
+  main .service-card p,
+  main .step p,
+  main .faq details p,
+  main .contact-inner > p:not(.eyebrow),
+  main .reset-card-copy small {
+    font-size: .84rem !important;
+  }
+}
+
+
+/* ===== Final logo scale ===== */
+.brand-logo {
+  width: 80px !important;
+  max-width: 80px !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+}
+
+.footer-logo {
+  width: 75px !important;
+  max-width: 75px !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+}
+
+/* Preserve the light header logo treatment in dark mode */
+@media (prefers-color-scheme: dark) {
+  .site-header .brand-logo {
+    width: 80px !important;
+    max-width: 80px !important;
+    height: auto !important;
+    filter: brightness(0) invert(1) !important;
+    opacity: 1 !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand-logo {
+    width: 76px !important;
+    max-width: 76px !important;
+  }
+
+  .footer-logo {
+    width: 72px !important;
+    max-width: 72px !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .site-header .brand-logo {
+      width: 76px !important;
+      max-width: 76px !important;
+    }
+  }
+}
+
+
+/* ===== Further typography reduction =====
+   Logo sizing and header/footer typography remain unchanged.
+*/
+
+/* Desktop */
+main .hero h1 {
+  font-size: 2.55rem !important;
+  line-height: 1.13 !important;
+  max-width: 650px;
+}
+
+main h2 {
+  font-size: 1.7rem !important;
+  line-height: 1.2 !important;
+}
+
+main h3 {
+  font-size: .92rem !important;
+}
+
+main .contact h2 {
+  font-size: 1.8rem !important;
+}
+
+main .hero .intro,
+main .hero-text {
+  font-size: .92rem !important;
+}
+
+main .service-card p,
+main .step p,
+main .faq details p,
+main .contact-inner > p:not(.eyebrow) {
+  font-size: .84rem !important;
+}
+
+main .reset-card-copy strong {
+  font-size: .96rem !important;
+}
+
+main .reset-card-copy small {
+  font-size: .78rem !important;
+}
+
+main .eyebrow {
+  font-size: .62rem !important;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+  main .hero h1 {
+    font-size: 2.05rem !important;
+  }
+
+  main h2 {
+    font-size: 1.5rem !important;
+  }
+
+  main .contact h2 {
+    font-size: 1.58rem !important;
+  }
+
+  main .hero .intro,
+  main .hero-text {
+    font-size: .88rem !important;
+  }
+}
+
+/* Phone */
+@media (max-width: 560px) {
+  main .hero h1 {
+    font-size: 1.72rem !important;
+    line-height: 1.16 !important;
+  }
+
+  main h2 {
+    font-size: 1.35rem !important;
+  }
+
+  main h3 {
+    font-size: .88rem !important;
+  }
+
+  main .contact h2 {
+    font-size: 1.42rem !important;
+  }
+
+  main .hero .intro,
+  main .hero-text {
+    font-size: .85rem !important;
+  }
+
+  main .service-card p,
+  main .step p,
+  main .faq details p,
+  main .contact-inner > p:not(.eyebrow) {
+    font-size: .8rem !important;
+  }
+
+  main .reset-card-copy strong {
+    font-size: .88rem !important;
+  }
+
+  main .reset-card-copy small {
+    font-size: .68rem !important;
+  }
+}
