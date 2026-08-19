@@ -493,3 +493,37 @@ footer > p {
     border-color: rgba(255,255,255,.55) !important;
   }
 }
+
+
+/* ===== Phone-specific refinement ===== */
+@media (max-width: 560px) {
+  /* Smaller hero headline on phones only */
+  .hero h1 {
+    font-size: 2.15rem !important;
+    line-height: 1.12 !important;
+    max-width: 100%;
+  }
+
+  .hero .intro {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Keep the header logo clearly visible in dark mode */
+  @media (prefers-color-scheme: dark) {
+    .site-header .brand-logo {
+      content: normal !important;
+      filter: brightness(0) invert(1) !important;
+      opacity: 1 !important;
+    }
+  }
+}
+
+/* ===== Dark-mode header logo fix for all screen sizes ===== */
+@media (prefers-color-scheme: dark) {
+  .site-header .brand-logo {
+    content: normal !important;
+    filter: brightness(0) invert(1) !important;
+    opacity: 1 !important;
+  }
+}
