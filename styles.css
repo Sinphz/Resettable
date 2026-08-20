@@ -391,3 +391,99 @@ h1,h2,h3,p{margin-top:0}
   box-shadow:var(--shadow);
   outline:none;
 }
+
+
+/* ==========================================================
+   RESETTABLE — LAUNCH POLISH
+   ========================================================== */
+
+/* 2. Desktop + tablet: all 3 space cards and image areas match exactly */
+@media (min-width:561px) {
+  .space-cards{
+    align-items:stretch !important;
+    grid-auto-rows:1fr !important;
+  }
+
+  .space-card{
+    display:flex !important;
+    flex-direction:column !important;
+    height:100% !important;
+  }
+
+  .space-image{
+    flex:0 0 135px !important;
+    height:135px !important;
+    min-height:135px !important;
+  }
+
+  .space-copy{
+    flex:1 1 auto !important;
+    min-height:104px !important;
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+  }
+
+  .space-copy h2{
+    min-height:2.2em !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+  }
+}
+
+@media (min-width:561px) and (max-width:850px) {
+  .space-image{
+    flex-basis:115px !important;
+    height:115px !important;
+    min-height:115px !important;
+  }
+
+  .space-copy{
+    min-height:112px !important;
+  }
+
+  .space-copy h2{
+    min-height:2.35em !important;
+  }
+}
+
+/* 3. Dark mode: trust/location details must remain visible */
+@media (prefers-color-scheme:dark) {
+  .about-badges,
+  .about-badges .badge,
+  .about-badges .badge span{
+    color:var(--sage-light) !important;
+  }
+
+  .location-icon{
+    stroke:var(--sage-light) !important;
+  }
+}
+
+/* 4. Phone: use a much wider, pulled-back hero composition */
+@media (max-width:560px) {
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.98) 0%,
+        rgba(246,243,235,.95) 34%,
+        rgba(246,243,235,.64) 56%,
+        rgba(246,243,235,.14) 78%,
+        rgba(246,243,235,0) 100%),
+      url("hero-mobile.jpg") center center / cover no-repeat !important;
+  }
+}
+
+@media (prefers-color-scheme:dark) and (max-width:560px) {
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(32,39,31,.98) 0%,
+        rgba(32,39,31,.94) 34%,
+        rgba(32,39,31,.62) 56%,
+        rgba(32,39,31,.14) 78%,
+        rgba(32,39,31,0) 100%),
+      url("hero-mobile.jpg") center center / cover no-repeat !important;
+  }
+}
