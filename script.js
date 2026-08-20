@@ -13,6 +13,17 @@ document.querySelectorAll('.site-nav a').forEach(link => {
   });
 });
 
+document.querySelectorAll('.reset-choice-link').forEach(link => {
+  link.addEventListener('click', () => {
+    const choice = link.dataset.resetChoice;
+    const resetSelect = document.querySelector('select[name="reset_level"]');
+
+    if (resetSelect && choice) {
+      resetSelect.value = choice;
+    }
+  });
+});
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
