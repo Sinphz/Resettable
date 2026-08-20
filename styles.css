@@ -262,3 +262,25 @@ h1,h2,h3,p{margin-top:0}
     color:var(--sage-light) !important;
   }
 }
+
+
+/* Keep the About message calm and compact */
+.about-panel h2{
+  font-size:.82rem !important;
+  line-height:1.35 !important;
+  max-width:440px;
+  margin-bottom:10px;
+}
+
+@media(max-width:850px){
+  .about-panel h2{
+    font-size:.78rem !important;
+  }
+}
+
+@media(max-width:560px){
+  .about-panel h2{
+    font-size:.74rem !important;
+    line-height:1.35 !important;
+  }
+}
