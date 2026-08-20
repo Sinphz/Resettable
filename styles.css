@@ -978,3 +978,146 @@ h1,h2,h3,p{margin-top:0}
     line-height: 1.35 !important;
   }
 }
+
+
+/* ===== FINAL PHONE/TABLET HERO + CARD CONSISTENCY FIX ===== */
+
+/* Use the hero image at a controlled size instead of stretching/zooming it */
+.hero::after {
+  background:
+    linear-gradient(90deg,
+      rgba(246,243,235,.98) 0%,
+      rgba(246,243,235,.72) 18%,
+      rgba(246,243,235,.18) 42%,
+      rgba(246,243,235,0) 58%),
+    url("hero-banner.jpg") right center / 78% auto no-repeat !important;
+}
+
+/* Tablet: keep more of the hero image visible */
+@media (min-width: 561px) and (max-width: 850px) {
+  .hero::after {
+    width: 56% !important;
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.98) 0%,
+        rgba(246,243,235,.68) 18%,
+        rgba(246,243,235,.15) 40%,
+        rgba(246,243,235,0) 56%),
+      url("hero-banner.jpg") right center / 72% auto no-repeat !important;
+  }
+}
+
+/* Phone: show the hero décor smaller / less zoomed */
+@media (max-width: 560px) {
+  .hero {
+    min-height: 230px !important;
+  }
+
+  .hero::after {
+    width: 58% !important;
+    opacity: 1 !important;
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.99) 0%,
+        rgba(246,243,235,.78) 20%,
+        rgba(246,243,235,.22) 46%,
+        rgba(246,243,235,0) 62%),
+      url("hero-banner.jpg") right center / 68% auto no-repeat !important;
+  }
+
+  .hero-copy {
+    width: 55% !important;
+    min-height: 230px !important;
+    margin-left: 5vw !important;
+    padding: 28px 0 !important;
+  }
+
+  .hero h1 {
+    font-size: 1.08rem !important;
+    line-height: 1.18 !important;
+    max-width: 230px !important;
+  }
+
+  .hero p {
+    max-width: 210px !important;
+    font-size: .58rem !important;
+  }
+
+  /* Keep all 3 cards exactly the same height */
+  .space-cards {
+    align-items: stretch !important;
+  }
+
+  .space-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+  }
+
+  .space-image {
+    flex: 0 0 82px !important;
+    height: 82px !important;
+  }
+
+  .space-copy {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    min-height: 138px !important;
+    padding: 10px 7px 12px !important;
+  }
+
+  .space-copy h2 {
+    min-height: 2.35em !important;
+    margin-bottom: 6px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: .52rem !important;
+    line-height: 1.12 !important;
+  }
+
+  .space-copy p {
+    margin-bottom: 0 !important;
+    font-size: .46rem !important;
+    line-height: 1.28 !important;
+  }
+}
+
+/* Dark mode equivalents */
+@media (prefers-color-scheme: dark) {
+  .hero::after {
+    background:
+      linear-gradient(90deg,
+        rgba(32,39,31,.98) 0%,
+        rgba(32,39,31,.70) 18%,
+        rgba(32,39,31,.18) 42%,
+        rgba(32,39,31,0) 58%),
+      url("hero-banner.jpg") right center / 78% auto no-repeat !important;
+  }
+
+  @media (min-width: 561px) and (max-width: 850px) {
+    .hero::after {
+      background:
+        linear-gradient(90deg,
+          rgba(32,39,31,.98) 0%,
+          rgba(32,39,31,.66) 18%,
+          rgba(32,39,31,.14) 40%,
+          rgba(32,39,31,0) 56%),
+        url("hero-banner.jpg") right center / 72% auto no-repeat !important;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .hero::after {
+      background:
+        linear-gradient(90deg,
+          rgba(32,39,31,.99) 0%,
+          rgba(32,39,31,.76) 20%,
+          rgba(32,39,31,.20) 46%,
+          rgba(32,39,31,0) 62%),
+        url("hero-banner.jpg") right center / 68% auto no-repeat !important;
+    }
+  }
+}
