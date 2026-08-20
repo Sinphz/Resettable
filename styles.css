@@ -785,3 +785,118 @@ h1,h2,h3,p{margin-top:0}
   background-size:cover;
   background-repeat:no-repeat;
 }
+
+
+/* ===== FINAL HERO: pulled-back / less zoomed ===== */
+.hero{
+  position:relative !important;
+  display:block !important;
+  min-height:300px !important;
+  overflow:hidden !important;
+  background:var(--cream) !important;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  width:52%;
+  background:
+    linear-gradient(90deg,
+      rgba(246,243,235,.98) 0%,
+      rgba(246,243,235,.62) 13%,
+      rgba(246,243,235,.12) 30%,
+      rgba(246,243,235,0) 45%),
+    url("hero-banner.jpg") right center / auto 100% no-repeat !important;
+  pointer-events:none;
+  z-index:0;
+}
+
+.hero-copy{
+  position:relative !important;
+  z-index:2 !important;
+  width:46% !important;
+  min-height:300px !important;
+  margin-left:8vw !important;
+  padding:48px 0 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+}
+
+.hero h1{
+  max-width:430px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  font-size:1.55rem !important;
+  line-height:1.18 !important;
+}
+
+.hero p{
+  max-width:320px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  font-size:.74rem !important;
+}
+
+@media(max-width:850px){
+  .hero{min-height:260px !important}
+
+  .hero::after{
+    width:50%;
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.98) 0%,
+        rgba(246,243,235,.64) 16%,
+        rgba(246,243,235,.12) 34%,
+        rgba(246,243,235,0) 48%),
+      url("hero-banner.jpg") right center / auto 100% no-repeat !important;
+  }
+
+  .hero-copy{
+    width:50% !important;
+    min-height:260px !important;
+    margin-left:6vw !important;
+    padding:38px 0 !important;
+  }
+
+  .hero h1{font-size:1.4rem !important}
+}
+
+@media(max-width:560px){
+  .hero{min-height:230px !important}
+  .hero::after{width:48%;opacity:.95}
+
+  .hero-copy{
+    width:52% !important;
+    min-height:230px !important;
+    margin-left:5vw !important;
+    padding:30px 0 !important;
+  }
+
+  .hero h1{font-size:1.18rem !important}
+  .hero p{font-size:.61rem !important}
+
+  .hero .button{
+    padding:8px 13px !important;
+    font-size:.6rem !important;
+  }
+}
+
+@media(prefers-color-scheme:dark){
+  .hero{background:var(--cream) !important}
+
+  .hero::after{
+    background:
+      linear-gradient(90deg,
+        rgba(32,39,31,.98) 0%,
+        rgba(32,39,31,.62) 16%,
+        rgba(32,39,31,.12) 34%,
+        rgba(32,39,31,0) 48%),
+      url("hero-banner.jpg") right center / auto 100% no-repeat !important;
+  }
+}
