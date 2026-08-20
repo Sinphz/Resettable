@@ -1123,9 +1123,9 @@ h1,h2,h3,p{margin-top:0}
 }
 
 
-/* ===== FULL-WIDTH HERO IMAGE ON ALL DEVICES =====
-   Matches the approved reference: one continuous hero image spanning the
-   entire hero area, with a soft cream wash on the left for readable text.
+/* ===== EXACT HERO REFERENCE COMPOSITION =====
+   Uses the supplied approved hero artwork directly, so the image scale,
+   vase/basket size and left-side breathing room match the reference.
 */
 
 .hero{
@@ -1134,28 +1134,23 @@ h1,h2,h3,p{margin-top:0}
   min-height:300px !important;
   overflow:hidden !important;
   background:
-    linear-gradient(90deg,
-      rgba(246,243,235,.97) 0%,
-      rgba(246,243,235,.93) 27%,
-      rgba(246,243,235,.64) 44%,
-      rgba(246,243,235,.16) 66%,
-      rgba(246,243,235,0) 100%),
-    url("hero-banner.jpg") center center / cover no-repeat !important;
+    url("hero-reference-exact.jpg") center center / 100% 100% no-repeat !important;
 }
 
-/* Disable the previous right-side image layer */
+/* Remove all previous pseudo-image layers */
 .hero::after{
   content:none !important;
   display:none !important;
 }
 
+/* Text block positioned over the left half, matching the reference */
 .hero-copy{
   position:relative !important;
   z-index:2 !important;
-  width:46% !important;
+  width:52% !important;
   min-height:300px !important;
-  margin-left:8vw !important;
-  padding:46px 0 !important;
+  margin:0 !important;
+  padding:46px 0 42px 8vw !important;
   display:flex !important;
   flex-direction:column !important;
   align-items:center !important;
@@ -1164,76 +1159,68 @@ h1,h2,h3,p{margin-top:0}
 }
 
 .hero h1{
-  max-width:430px !important;
+  max-width:470px !important;
   margin-left:auto !important;
   margin-right:auto !important;
-  font-size:1.55rem !important;
+  font-size:1.5rem !important;
   line-height:1.18 !important;
 }
 
 .hero p{
-  max-width:320px !important;
+  max-width:330px !important;
   margin-left:auto !important;
   margin-right:auto !important;
-  font-size:.74rem !important;
+  font-size:.73rem !important;
 }
 
-/* Tablet */
+/* Tablet: keep the exact same overall composition instead of zooming it */
 @media (max-width:850px){
   .hero{
     min-height:260px !important;
     background:
-      linear-gradient(90deg,
-        rgba(246,243,235,.98) 0%,
-        rgba(246,243,235,.92) 30%,
-        rgba(246,243,235,.60) 50%,
-        rgba(246,243,235,.14) 72%,
-        rgba(246,243,235,0) 100%),
-      url("hero-banner.jpg") center center / cover no-repeat !important;
+      url("hero-reference-exact.jpg") center center / 100% 100% no-repeat !important;
   }
 
   .hero-copy{
-    width:50% !important;
+    width:55% !important;
     min-height:260px !important;
-    margin-left:6vw !important;
-    padding:36px 0 !important;
+    padding:36px 0 34px 6vw !important;
   }
 
   .hero h1{
-    font-size:1.38rem !important;
+    font-size:1.34rem !important;
+    max-width:360px !important;
+  }
+
+  .hero p{
+    font-size:.66rem !important;
+    max-width:285px !important;
   }
 }
 
-/* Phone */
+/* Phone: still show the whole reference image, scaled down rather than cropped/zoomed */
 @media (max-width:560px){
   .hero{
-    min-height:235px !important;
+    min-height:225px !important;
     background:
-      linear-gradient(90deg,
-        rgba(246,243,235,.98) 0%,
-        rgba(246,243,235,.92) 34%,
-        rgba(246,243,235,.56) 58%,
-        rgba(246,243,235,.12) 78%,
-        rgba(246,243,235,0) 100%),
-      url("hero-banner.jpg") center center / cover no-repeat !important;
+      url("hero-reference-exact.jpg") center center / 100% 100% no-repeat !important;
   }
 
   .hero-copy{
-    width:57% !important;
-    min-height:235px !important;
-    margin-left:5vw !important;
-    padding:28px 0 !important;
+    width:58% !important;
+    min-height:225px !important;
+    padding:28px 0 26px 5vw !important;
   }
 
   .hero h1{
-    max-width:245px !important;
-    font-size:1.08rem !important;
+    max-width:235px !important;
+    font-size:1.02rem !important;
     line-height:1.18 !important;
   }
 
   .hero p{
-    max-width:220px !important;
-    font-size:.58rem !important;
+    max-width:205px !important;
+    font-size:.56rem !important;
   }
 
   .hero .button{
@@ -1242,42 +1229,10 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
-/* Full-width dark mode equivalent */
+/* Dark mode: keep the exact hero artwork rather than recolouring/zooming it */
 @media (prefers-color-scheme:dark){
   .hero{
     background:
-      linear-gradient(90deg,
-        rgba(32,39,31,.97) 0%,
-        rgba(32,39,31,.91) 28%,
-        rgba(32,39,31,.60) 46%,
-        rgba(32,39,31,.15) 68%,
-        rgba(32,39,31,0) 100%),
-      url("hero-banner.jpg") center center / cover no-repeat !important;
-  }
-
-  @media (max-width:850px){
-    .hero{
-      background:
-        linear-gradient(90deg,
-          rgba(32,39,31,.98) 0%,
-          rgba(32,39,31,.92) 30%,
-          rgba(32,39,31,.58) 52%,
-          rgba(32,39,31,.13) 74%,
-          rgba(32,39,31,0) 100%),
-        url("hero-banner.jpg") center center / cover no-repeat !important;
-    }
-  }
-
-  @media (max-width:560px){
-    .hero{
-      background:
-        linear-gradient(90deg,
-          rgba(32,39,31,.98) 0%,
-          rgba(32,39,31,.91) 34%,
-          rgba(32,39,31,.54) 60%,
-          rgba(32,39,31,.12) 80%,
-          rgba(32,39,31,0) 100%),
-        url("hero-banner.jpg") center center / cover no-repeat !important;
-    }
+      url("hero-reference-exact.jpg") center center / 100% 100% no-repeat !important;
   }
 }
