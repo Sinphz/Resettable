@@ -20,11 +20,9 @@ const observer = new IntersectionObserver(entries => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.08 });
 
-document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 const year = document.querySelector('#year');
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+if (year) year.textContent = new Date().getFullYear();
