@@ -235,3 +235,15 @@ h1,h2,h3,p{margin-top:0}
   .social-icons svg{stroke:var(--sage-light)}
   .social-icons .dot{fill:var(--sage-light)}
 }
+
+
+/* Final section-order refinement */
+.space-cards-wrap > .section-title,
+.reset-levels > .section-title,
+.what-we-do > .section-title{
+  margin-bottom:18px;
+}
+
+.about-panel > p:not(.eyebrow){
+  margin-bottom:10px;
+}
