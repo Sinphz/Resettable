@@ -631,3 +631,22 @@ h1,h2,h3,p{margin-top:0}
   .social-icons svg{stroke:var(--sage-light)}
   .social-icons .dot{fill:var(--sage-light)}
 }
+
+
+/* Location pin beside Based in Islington / Serving North London */
+.location-icon{
+  width:18px;
+  height:18px;
+  flex:0 0 18px;
+  fill:none;
+  stroke:var(--deep);
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+@media(prefers-color-scheme:dark){
+  .location-icon{
+    stroke:var(--sage-light);
+  }
+}
