@@ -142,9 +142,9 @@ h1,h2,h3,p{margin-top:0}
   background-position:center;
   background-size:cover;
 }
-.space-image.home{background-image:url("home.jpg")}
-.space-image.outdoor{background-image:url("outdoor.jpg")}
-.space-image.workspace{background-image:url("workspaces.jpg")}
+.space-image.home{background-image:url("home-card.jpg")}
+.space-image.outdoor{background-image:url("outdoor-card.jpg")}
+.space-image.workspace{background-image:url("workspaces-card.jpg")}
 .space-copy{
   min-height:88px;
   padding:13px 14px;
@@ -774,4 +774,14 @@ h1,h2,h3,p{margin-top:0}
   .hero h1 em{
     color:var(--sage-light);
   }
+}
+
+
+/* Exact card-image crops from the approved mockup */
+.space-image.home,
+.space-image.outdoor,
+.space-image.workspace{
+  background-position:center center;
+  background-size:cover;
+  background-repeat:no-repeat;
 }
