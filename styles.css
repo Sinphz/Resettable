@@ -650,3 +650,128 @@ h1,h2,h3,p{margin-top:0}
     stroke:var(--sage-light);
   }
 }
+
+
+/* ===== Full-width hero image from approved mockup ===== */
+.hero{
+  position:relative;
+  display:block !important;
+  min-height:285px;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,
+      rgba(246,243,235,.98) 0%,
+      rgba(246,243,235,.96) 31%,
+      rgba(246,243,235,.72) 47%,
+      rgba(246,243,235,.18) 68%,
+      rgba(246,243,235,.02) 100%),
+    url("hero-banner.jpg") center right / cover no-repeat !important;
+}
+
+.hero-copy{
+  position:relative;
+  z-index:2;
+  width:min(550px,48%);
+  min-height:285px;
+  margin-left:8vw;
+  padding:42px 0 !important;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero-photo{
+  display:none !important;
+}
+
+/* keep mockup's compact hero typography */
+.hero h1{
+  font-size:1.62rem !important;
+  line-height:1.18 !important;
+}
+
+.hero p{
+  font-size:.75rem !important;
+}
+
+/* Tablet */
+@media(max-width:850px){
+  .hero{
+    min-height:250px;
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.98) 0%,
+        rgba(246,243,235,.94) 38%,
+        rgba(246,243,235,.55) 60%,
+        rgba(246,243,235,.08) 100%),
+      url("hero-banner.jpg") center right / cover no-repeat !important;
+  }
+
+  .hero-copy{
+    width:55%;
+    min-height:250px;
+    margin-left:6vw;
+    padding:34px 0 !important;
+  }
+
+  .hero h1{
+    font-size:1.48rem !important;
+  }
+}
+
+/* Phone */
+@media(max-width:560px){
+  .hero{
+    min-height:225px;
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.98) 0%,
+        rgba(246,243,235,.93) 48%,
+        rgba(246,243,235,.48) 72%,
+        rgba(246,243,235,.1) 100%),
+      url("hero-banner.jpg") 62% center / cover no-repeat !important;
+  }
+
+  .hero-copy{
+    width:63%;
+    min-height:225px;
+    margin-left:5vw;
+    padding:28px 0 !important;
+  }
+
+  .hero h1{
+    font-size:1.22rem !important;
+  }
+
+  .hero p{
+    font-size:.62rem !important;
+    max-width:220px;
+  }
+
+  .hero .button{
+    padding:8px 14px;
+    font-size:.62rem;
+  }
+}
+
+/* Full-site dark mode: keep the same hero photo, with a dark green wash */
+@media(prefers-color-scheme:dark){
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(23,29,24,.98) 0%,
+        rgba(23,29,24,.93) 36%,
+        rgba(23,29,24,.58) 60%,
+        rgba(23,29,24,.12) 100%),
+      url("hero-banner.jpg") center right / cover no-repeat !important;
+  }
+
+  .hero h1,
+  .hero p{
+    color:var(--ink);
+  }
+
+  .hero h1 em{
+    color:var(--sage-light);
+  }
+}
