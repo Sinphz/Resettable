@@ -247,3 +247,18 @@ h1,h2,h3,p{margin-top:0}
 .about-panel > p:not(.eyebrow){
   margin-bottom:10px;
 }
+
+
+/* Final About cleanup */
+.about-signoff{
+  margin-top:14px;
+  color:var(--deep) !important;
+  font-weight:700;
+  font-size:.68rem !important;
+}
+
+@media(prefers-color-scheme:dark){
+  .about-signoff{
+    color:var(--sage-light) !important;
+  }
+}
