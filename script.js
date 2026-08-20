@@ -7,7 +7,10 @@ menuToggle?.addEventListener('click', () => {
 });
 
 document.querySelectorAll('.site-nav a').forEach(link => {
-  link.addEventListener('click', () => nav.classList.remove('open'));
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+  });
 });
 
 const observer = new IntersectionObserver(entries => {
@@ -17,9 +20,9 @@ const observer = new IntersectionObserver(entries => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.1 });
 
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
 
 const year = document.querySelector('#year');
 if (year) {
