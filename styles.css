@@ -1121,3 +1121,163 @@ h1,h2,h3,p{margin-top:0}
     }
   }
 }
+
+
+/* ===== FULL-WIDTH HERO IMAGE ON ALL DEVICES =====
+   Matches the approved reference: one continuous hero image spanning the
+   entire hero area, with a soft cream wash on the left for readable text.
+*/
+
+.hero{
+  position:relative !important;
+  display:block !important;
+  min-height:300px !important;
+  overflow:hidden !important;
+  background:
+    linear-gradient(90deg,
+      rgba(246,243,235,.97) 0%,
+      rgba(246,243,235,.93) 27%,
+      rgba(246,243,235,.64) 44%,
+      rgba(246,243,235,.16) 66%,
+      rgba(246,243,235,0) 100%),
+    url("hero-banner.jpg") center center / cover no-repeat !important;
+}
+
+/* Disable the previous right-side image layer */
+.hero::after{
+  content:none !important;
+  display:none !important;
+}
+
+.hero-copy{
+  position:relative !important;
+  z-index:2 !important;
+  width:46% !important;
+  min-height:300px !important;
+  margin-left:8vw !important;
+  padding:46px 0 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+}
+
+.hero h1{
+  max-width:430px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  font-size:1.55rem !important;
+  line-height:1.18 !important;
+}
+
+.hero p{
+  max-width:320px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  font-size:.74rem !important;
+}
+
+/* Tablet */
+@media (max-width:850px){
+  .hero{
+    min-height:260px !important;
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.98) 0%,
+        rgba(246,243,235,.92) 30%,
+        rgba(246,243,235,.60) 50%,
+        rgba(246,243,235,.14) 72%,
+        rgba(246,243,235,0) 100%),
+      url("hero-banner.jpg") center center / cover no-repeat !important;
+  }
+
+  .hero-copy{
+    width:50% !important;
+    min-height:260px !important;
+    margin-left:6vw !important;
+    padding:36px 0 !important;
+  }
+
+  .hero h1{
+    font-size:1.38rem !important;
+  }
+}
+
+/* Phone */
+@media (max-width:560px){
+  .hero{
+    min-height:235px !important;
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.98) 0%,
+        rgba(246,243,235,.92) 34%,
+        rgba(246,243,235,.56) 58%,
+        rgba(246,243,235,.12) 78%,
+        rgba(246,243,235,0) 100%),
+      url("hero-banner.jpg") center center / cover no-repeat !important;
+  }
+
+  .hero-copy{
+    width:57% !important;
+    min-height:235px !important;
+    margin-left:5vw !important;
+    padding:28px 0 !important;
+  }
+
+  .hero h1{
+    max-width:245px !important;
+    font-size:1.08rem !important;
+    line-height:1.18 !important;
+  }
+
+  .hero p{
+    max-width:220px !important;
+    font-size:.58rem !important;
+  }
+
+  .hero .button{
+    padding:8px 13px !important;
+    font-size:.6rem !important;
+  }
+}
+
+/* Full-width dark mode equivalent */
+@media (prefers-color-scheme:dark){
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(32,39,31,.97) 0%,
+        rgba(32,39,31,.91) 28%,
+        rgba(32,39,31,.60) 46%,
+        rgba(32,39,31,.15) 68%,
+        rgba(32,39,31,0) 100%),
+      url("hero-banner.jpg") center center / cover no-repeat !important;
+  }
+
+  @media (max-width:850px){
+    .hero{
+      background:
+        linear-gradient(90deg,
+          rgba(32,39,31,.98) 0%,
+          rgba(32,39,31,.92) 30%,
+          rgba(32,39,31,.58) 52%,
+          rgba(32,39,31,.13) 74%,
+          rgba(32,39,31,0) 100%),
+        url("hero-banner.jpg") center center / cover no-repeat !important;
+    }
+  }
+
+  @media (max-width:560px){
+    .hero{
+      background:
+        linear-gradient(90deg,
+          rgba(32,39,31,.98) 0%,
+          rgba(32,39,31,.91) 34%,
+          rgba(32,39,31,.54) 60%,
+          rgba(32,39,31,.12) 80%,
+          rgba(32,39,31,0) 100%),
+        url("hero-banner.jpg") center center / cover no-repeat !important;
+    }
+  }
+}
