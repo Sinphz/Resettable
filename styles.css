@@ -291,11 +291,9 @@ h1,h2,h3,p{margin-top:0}
   font-family:"DM Sans",sans-serif !important;
   font-size:.65rem !important;
   line-height:1.5 !important;
-  font-weight:400 !important;
+  font-weight:700 !important;
   max-width:520px !important;
   margin-bottom:10px !important;
-  color:var(--muted) !important;
-
 }
 
 @media(max-width:850px){
@@ -308,5 +306,73 @@ h1,h2,h3,p{margin-top:0}
   .about-panel h2{
     font-size:.65rem !important;
     line-height:1.5 !important;
+  }
+}
+
+
+/* ===== FINAL RESPONSIVE HERO IMAGES =====
+   Desktop stays exactly as it is.
+   Tablet and phone use their own clean, text-free hero images so CSS no longer
+   has to crop/zoom the desktop image.
+*/
+
+/* User's final About preference: same size/weight/colour as the following sentence */
+.about-panel h2{
+  color:var(--muted) !important;
+  font-weight:400 !important;
+}
+
+/* Tablet only */
+@media (min-width:561px) and (max-width:850px){
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.98) 0%,
+        rgba(246,243,235,.95) 29%,
+        rgba(246,243,235,.68) 48%,
+        rgba(246,243,235,.16) 70%,
+        rgba(246,243,235,0) 100%),
+      url("hero-tablet.jpg") center center / cover no-repeat !important;
+  }
+}
+
+/* Phone only */
+@media (max-width:560px){
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.98) 0%,
+        rgba(246,243,235,.95) 34%,
+        rgba(246,243,235,.66) 55%,
+        rgba(246,243,235,.16) 77%,
+        rgba(246,243,235,0) 100%),
+      url("hero-mobile.jpg") center center / cover no-repeat !important;
+  }
+}
+
+/* Matching dark-mode treatments */
+@media (prefers-color-scheme:dark) and (min-width:561px) and (max-width:850px){
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(32,39,31,.98) 0%,
+        rgba(32,39,31,.94) 29%,
+        rgba(32,39,31,.66) 48%,
+        rgba(32,39,31,.16) 70%,
+        rgba(32,39,31,0) 100%),
+      url("hero-tablet.jpg") center center / cover no-repeat !important;
+  }
+}
+
+@media (prefers-color-scheme:dark) and (max-width:560px){
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(32,39,31,.98) 0%,
+        rgba(32,39,31,.94) 34%,
+        rgba(32,39,31,.64) 55%,
+        rgba(32,39,31,.16) 77%,
+        rgba(32,39,31,0) 100%),
+      url("hero-mobile.jpg") center center / cover no-repeat !important;
   }
 }
