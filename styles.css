@@ -900,3 +900,81 @@ h1,h2,h3,p{margin-top:0}
       url("hero-banner.jpg") right center / auto 100% no-repeat !important;
   }
 }
+
+
+/* ===== TABLET-ONLY CARD ALIGNMENT FIX =====
+   Desktop stays exactly as it is.
+*/
+@media (min-width: 561px) and (max-width: 850px) {
+
+  /* Keep the 3 main cards equal height */
+  .space-cards {
+    align-items: stretch !important;
+  }
+
+  .space-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+  }
+
+  .space-image {
+    flex: 0 0 115px !important;
+    height: 115px !important;
+  }
+
+  .space-copy {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    min-height: 98px !important;
+    padding: 12px 10px 14px !important;
+  }
+
+  .space-copy h2 {
+    min-height: 2.15em !important;
+    margin-bottom: 6px !important;
+    font-size: .68rem !important;
+    line-height: 1.08 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .space-copy p {
+    margin-bottom: 0 !important;
+    font-size: .60rem !important;
+    line-height: 1.28 !important;
+  }
+
+  /* Keep "What Resettable Does" as a clean 2 x 2 layout */
+  .what-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0 !important;
+  }
+
+  .what-card {
+    min-height: 145px !important;
+    padding: 20px 16px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--line) !important;
+  }
+
+  .what-card:nth-child(odd) {
+    border-right: 1px solid var(--line) !important;
+  }
+
+  .what-card:nth-last-child(-n+2) {
+    border-bottom: 0 !important;
+  }
+
+  .what-card h3 {
+    font-size: .72rem !important;
+  }
+
+  .what-card p {
+    font-size: .62rem !important;
+    line-height: 1.35 !important;
+  }
+}
