@@ -769,3 +769,24 @@ h1,h2,h3,p{margin-top:0}
         font-size: 0.56rem !important;
     }
 }
+
+/* PHONE — align What We Can Help With icons and titles */
+@media (max-width: 560px) {
+
+  .what-card .line-icon,
+  .what-card .create-spaces-icon {
+    height: 26px !important;
+    min-height: 26px !important;
+    margin: 0 auto 8px !important;
+  }
+
+  .create-spaces-icon {
+    width: 24px !important;
+    transform: scale(0.62) !important;
+    transform-origin: center top !important;
+  }
+
+  .what-card h3 {
+    margin-top: 0 !important;
+  }
+}
