@@ -487,3 +487,63 @@ h1,h2,h3,p{margin-top:0}
       url("hero-mobile.jpg") center center / cover no-repeat !important;
   }
 }
+
+/* ==========================================================
+   HERO MATCH — TABLET IS THE MASTER REFERENCE
+   Tablet (561px–850px) is deliberately left untouched.
+   ========================================================== */
+
+/* Desktop */
+@media (min-width:851px){
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.98) 0%,
+        rgba(246,243,235,.94) 31%,
+        rgba(246,243,235,.62) 50%,
+        rgba(246,243,235,.12) 70%,
+        rgba(246,243,235,0) 100%),
+      url("hero-desktop.jpg") center center / cover no-repeat !important;
+  }
+}
+
+/* Phone */
+@media (max-width:560px){
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.98) 0%,
+        rgba(246,243,235,.94) 36%,
+        rgba(246,243,235,.60) 58%,
+        rgba(246,243,235,.10) 78%,
+        rgba(246,243,235,0) 100%),
+      url("hero-mobile.jpg") center center / cover no-repeat !important;
+  }
+}
+
+/* Dark mode versions */
+@media (prefers-color-scheme:dark) and (min-width:851px){
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(32,39,31,.98) 0%,
+        rgba(32,39,31,.94) 31%,
+        rgba(32,39,31,.62) 50%,
+        rgba(32,39,31,.12) 70%,
+        rgba(32,39,31,0) 100%),
+      url("hero-desktop.jpg") center center / cover no-repeat !important;
+  }
+}
+
+@media (prefers-color-scheme:dark) and (max-width:560px){
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(32,39,31,.98) 0%,
+        rgba(32,39,31,.94) 36%,
+        rgba(32,39,31,.60) 58%,
+        rgba(32,39,31,.10) 78%,
+        rgba(32,39,31,0) 100%),
+      url("hero-mobile.jpg") center center / cover no-repeat !important;
+  }
+}
