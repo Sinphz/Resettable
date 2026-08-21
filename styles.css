@@ -733,3 +733,39 @@ h1,h2,h3,p{margin-top:0}
         font-size: 0.60rem !important;
     }
 }
+
+/* Restore original smaller sizing */
+
+/* Hero supporting sentence */
+.hero p {
+    font-size: 0.72rem !important;
+    line-height: 1.5 !important;
+}
+
+/* Home / Outdoor / Workspaces descriptions */
+.space-copy p {
+    font-size: 0.62rem !important;
+    line-height: 1.4 !important;
+}
+
+/* Tablet */
+@media (min-width: 561px) and (max-width: 850px) {
+    .hero p {
+        font-size: 0.70rem !important;
+    }
+
+    .space-copy p {
+        font-size: 0.60rem !important;
+    }
+}
+
+/* Phone */
+@media (max-width: 560px) {
+    .hero p {
+        font-size: 0.68rem !important;
+    }
+
+    .space-copy p {
+        font-size: 0.56rem !important;
+    }
+}
