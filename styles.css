@@ -681,3 +681,18 @@ h1,h2,h3,p{margin-top:0}
   .reset-form label span{font-size:.66rem !important;}
   .reset-form input,.reset-form select,.reset-form textarea{font-size:.72rem !important;}
 }
+
+/* FINAL TYPOGRAPHY HIERARCHY FIX */
+.process-step h3{font-size:.78rem!important;line-height:1.3!important;font-weight:700!important}
+.process-step p{font-size:.76rem!important;line-height:1.45!important;font-weight:400!important}
+.about-panel h2,.about-panel>p:not(.eyebrow){font-family:"DM Sans",sans-serif!important;font-size:.76rem!important;line-height:1.55!important;font-weight:400!important;color:var(--muted)!important}
+.about-panel .reassurance,.about-panel strong{font-weight:700!important;color:var(--ink)!important}
+@media (min-width:561px) and (max-width:850px){
+.process-step h3{font-size:.76rem!important}
+.process-step p,.about-panel h2,.about-panel>p:not(.eyebrow){font-size:.74rem!important}
+}
+@media (max-width:560px){
+.process-step h3{font-size:.72rem!important}
+.process-step p{font-size:.68rem!important}
+.about-panel h2,.about-panel>p:not(.eyebrow){font-size:.70rem!important;line-height:1.5!important}
+}
