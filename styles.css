@@ -710,3 +710,26 @@ h1,h2,h3,p{margin-top:0}
         font-size: 0.64rem !important;
     }
 }
+
+/* How It Works — smaller supporting text */
+.process-step h3 {
+    font-size: 0.68rem !important;
+    line-height: 1.3 !important;
+    font-weight: 700 !important;
+}
+
+.process-step p {
+    font-size: 0.64rem !important;
+    line-height: 1.45 !important;
+}
+
+/* Phone */
+@media (max-width: 560px) {
+    .process-step h3 {
+        font-size: 0.64rem !important;
+    }
+
+    .process-step p {
+        font-size: 0.60rem !important;
+    }
+}
