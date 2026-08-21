@@ -1,0 +1,12 @@
+
+/* Final card-image treatment */
+.space-image{
+  background-size:cover !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  border-top:6px solid #fff !important;
+}
+
+.space-image.home{background-image:url("home-card.jpg") !important;}
+.space-image.outdoor{background-image:url("outdoor-card.jpg") !important;}
+.space-image.workspace{background-image:url("workspaces-card.jpg") !important;}

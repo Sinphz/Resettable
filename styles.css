@@ -488,12 +488,48 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+
 /* ==========================================================
-   HERO MATCH — TABLET IS THE MASTER REFERENCE
-   Tablet (561px–850px) is deliberately left untouched.
+   FINAL DROP-IN OVERRIDES
    ========================================================== */
 
-/* Desktop */
+/* Final card images: full-width, matching, with the small white nip */
+.space-image{
+  background-size:cover !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  border-top:6px solid #fff !important;
+}
+.space-image.home{background-image:url("home-card.jpg") !important;}
+.space-image.outdoor{background-image:url("outdoor-card.jpg") !important;}
+.space-image.workspace{background-image:url("workspaces-card.jpg") !important;}
+
+/* Desktop card images: show the new 2:1 images at their intended proportion */
+@media (min-width:851px){
+  .space-image{
+    width:100% !important;
+    height:auto !important;
+    min-height:0 !important;
+    flex:0 0 auto !important;
+    aspect-ratio:2 / 1 !important;
+  }
+}
+
+/* Tablet stays on the hero composition that already looked right */
+@media (min-width:561px) and (max-width:850px){
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(246,243,235,.98) 0%,
+        rgba(246,243,235,.95) 29%,
+        rgba(246,243,235,.68) 48%,
+        rgba(246,243,235,.16) 70%,
+        rgba(246,243,235,0) 100%),
+      url("hero-tablet.jpg") center center / cover no-repeat !important;
+  }
+}
+
+/* Desktop matched to tablet scale */
 @media (min-width:851px){
   .hero{
     background:
@@ -507,21 +543,21 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
-/* Phone */
+/* Final phone hero: same scale, more breathing room on right */
 @media (max-width:560px){
   .hero{
     background:
       linear-gradient(90deg,
         rgba(246,243,235,.98) 0%,
-        rgba(246,243,235,.94) 36%,
-        rgba(246,243,235,.60) 58%,
-        rgba(246,243,235,.10) 78%,
+        rgba(246,243,235,.94) 35%,
+        rgba(246,243,235,.58) 57%,
+        rgba(246,243,235,.08) 78%,
         rgba(246,243,235,0) 100%),
       url("hero-mobile.jpg") center center / cover no-repeat !important;
   }
 }
 
-/* Dark mode versions */
+/* Dark-mode hero variants */
 @media (prefers-color-scheme:dark) and (min-width:851px){
   .hero{
     background:
@@ -534,16 +570,79 @@ h1,h2,h3,p{margin-top:0}
       url("hero-desktop.jpg") center center / cover no-repeat !important;
   }
 }
-
+@media (prefers-color-scheme:dark) and (min-width:561px) and (max-width:850px){
+  .hero{
+    background:
+      linear-gradient(90deg,
+        rgba(32,39,31,.98) 0%,
+        rgba(32,39,31,.94) 29%,
+        rgba(32,39,31,.66) 48%,
+        rgba(32,39,31,.16) 70%,
+        rgba(32,39,31,0) 100%),
+      url("hero-tablet.jpg") center center / cover no-repeat !important;
+  }
+}
 @media (prefers-color-scheme:dark) and (max-width:560px){
   .hero{
     background:
       linear-gradient(90deg,
         rgba(32,39,31,.98) 0%,
-        rgba(32,39,31,.94) 36%,
-        rgba(32,39,31,.60) 58%,
-        rgba(32,39,31,.10) 78%,
+        rgba(32,39,31,.94) 35%,
+        rgba(32,39,31,.58) 57%,
+        rgba(32,39,31,.08) 78%,
         rgba(32,39,31,0) 100%),
       url("hero-mobile.jpg") center center / cover no-repeat !important;
   }
+}
+
+/* Proper Create Spaces icon — simple plant/pot, no font/emoji glyph */
+.create-spaces-icon{
+  position:relative;
+  width:38px;
+  height:38px;
+  margin:0 auto 8px;
+}
+.create-spaces-icon::before{
+  content:"";
+  position:absolute;
+  left:12px;
+  bottom:2px;
+  width:14px;
+  height:12px;
+  border:2px solid var(--sage);
+  border-top:0;
+  border-radius:0 0 3px 3px;
+}
+.create-spaces-icon::after{
+  content:"";
+  position:absolute;
+  left:18px;
+  bottom:14px;
+  width:2px;
+  height:15px;
+  background:var(--sage);
+  transform-origin:bottom center;
+  box-shadow:-6px -5px 0 -1px var(--sage),6px -9px 0 -1px var(--sage);
+}
+
+/* Dark-mode trust text stays visible */
+@media (prefers-color-scheme:dark){
+  .about-badges,
+  .about-badges .badge,
+  .about-badges .badge span{
+    color:var(--sage-light) !important;
+  }
+  .location-icon{
+    stroke:var(--sage-light) !important;
+  }
+}
+
+/* Final About intro preference: calm, same tone as body copy */
+.about-panel h2{
+  color:var(--muted) !important;
+  font-weight:400 !important;
+  font-family:"DM Sans",sans-serif !important;
+  font-size:.65rem !important;
+  line-height:1.5 !important;
+  max-width:520px !important;
 }
