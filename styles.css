@@ -648,18 +648,36 @@ h1,h2,h3,p{margin-top:0}
 }
 
 
-/* =========================================
-   PHONE — MATCH CREATE SPACES ICON SIZE
-   ========================================= */
-
-@media (max-width: 560px) {
-
-  .create-spaces-icon {
-    width: 28px !important;
-    height: 28px !important;
-    margin: 0 auto 8px !important;
-    transform: scale(0.72);
-    transform-origin: center;
-  }
-
+/* ==========================================================
+   BODY COPY SIZE REFINEMENT
+   Headings, subheadings, buttons, header and footer unchanged.
+   ========================================================== */
+.hero p{font-size:.88rem !important;line-height:1.55 !important;}
+.space-copy p{font-size:.78rem !important;line-height:1.45 !important;}
+.what-card p{font-size:.78rem !important;line-height:1.45 !important;}
+.reset-level-card p{font-size:.78rem !important;line-height:1.5 !important;}
+.cta-strip p{font-size:.76rem !important;line-height:1.45 !important;}
+.process-step p{font-size:.76rem !important;line-height:1.45 !important;}
+.faq-list p{font-size:.76rem !important;line-height:1.5 !important;}
+.about-panel > p:not(.eyebrow){font-size:.76rem !important;line-height:1.55 !important;}
+.request-intro{font-size:.74rem !important;line-height:1.5 !important;}
+.reset-form label span{font-size:.68rem !important;}
+.reset-form input,.reset-form select,.reset-form textarea{font-size:.74rem !important;}
+@media (min-width:561px) and (max-width:850px){
+  .hero p{font-size:.84rem !important;}
+  .space-copy p,.what-card p,.reset-level-card p{font-size:.76rem !important;}
+  .process-step p,.faq-list p,.about-panel > p:not(.eyebrow){font-size:.74rem !important;}
+}
+@media (max-width:560px){
+  .hero p{font-size:.76rem !important;}
+  .space-copy p{font-size:.60rem !important;line-height:1.35 !important;}
+  .what-card p{font-size:.58rem !important;line-height:1.35 !important;}
+  .reset-level-card p{font-size:.72rem !important;line-height:1.45 !important;}
+  .cta-strip p{font-size:.70rem !important;}
+  .process-step p{font-size:.68rem !important;line-height:1.4 !important;}
+  .faq-list p{font-size:.70rem !important;line-height:1.48 !important;}
+  .about-panel > p:not(.eyebrow){font-size:.70rem !important;line-height:1.5 !important;}
+  .request-intro{font-size:.70rem !important;}
+  .reset-form label span{font-size:.66rem !important;}
+  .reset-form input,.reset-form select,.reset-form textarea{font-size:.72rem !important;}
 }
