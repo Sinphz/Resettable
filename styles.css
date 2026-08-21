@@ -646,3 +646,20 @@ h1,h2,h3,p{margin-top:0}
   line-height:1.5 !important;
   max-width:520px !important;
 }
+
+
+/* =========================================
+   PHONE — MATCH CREATE SPACES ICON SIZE
+   ========================================= */
+
+@media (max-width: 560px) {
+
+  .create-spaces-icon {
+    width: 28px !important;
+    height: 28px !important;
+    margin: 0 auto 8px !important;
+    transform: scale(0.72);
+    transform-origin: center;
+  }
+
+}
