@@ -982,3 +982,14 @@ h1,h2,h3,p{margin-top:0}
     font-size: 0.62rem !important;
   }
 }
+
+/* Phone — improve Outdoor description wrapping */
+@media screen and (max-width: 560px) {
+
+  .space-card:nth-child(2) .space-copy p {
+    width: 110% !important;
+    max-width: none !important;
+    margin-left: -5% !important;
+    margin-right: -5% !important;
+  }
+}
