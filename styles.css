@@ -1368,3 +1368,49 @@ h1,h2,h3,p{margin-top:0}
     align-self: start !important;
   }
 }
+
+/* ==========================================================
+   FINAL SPACE CARD CONTENT ALIGNMENT
+   ========================================================== */
+
+@media screen and (max-width: 1200px) {
+
+  .space-copy {
+    display: grid !important;
+    grid-template-rows: 44px auto !important;
+
+    align-content: start !important;
+    justify-content: stretch !important;
+
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+  }
+
+  .space-copy h2 {
+    grid-row: 1 !important;
+
+    width: 100% !important;
+    height: 44px !important;
+    min-height: 44px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+  }
+
+  .space-copy p {
+    grid-row: 2 !important;
+
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    align-self: start !important;
+    text-align: center !important;
+  }
+}
