@@ -1029,3 +1029,71 @@ h1,h2,h3,p{margin-top:0}
     margin-top: 0 !important;
   }
 }
+
+/* ==========================================================
+   PHONE — FINAL HEADING ALIGNMENT
+   ========================================================== */
+
+@media screen and (max-width: 560px) {
+
+  /* -----------------------------------------
+     HOME / OUTDOOR / WORKSPACES
+     ----------------------------------------- */
+
+  .space-copy h2 {
+    height: 42px !important;
+    min-height: 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 0 8px !important;
+    line-height: 1.15 !important;
+  }
+
+  .space-copy p {
+    margin-top: 0 !important;
+  }
+
+
+  /* -----------------------------------------
+     WHAT WE CAN HELP WITH
+     ----------------------------------------- */
+
+  /* Every icon gets exactly the same space */
+  .what-card .line-icon,
+  .what-card .create-spaces-icon {
+    width: 30px !important;
+    height: 30px !important;
+    min-height: 30px !important;
+
+    margin: 0 auto 12px !important;
+
+    display: block !important;
+  }
+
+  /* Keep custom Create Spaces icon visually smaller */
+  .what-card .create-spaces-icon {
+    transform: scale(0.65) !important;
+    transform-origin: center center !important;
+  }
+
+  /* Every heading gets the same vertical area */
+  .what-card h3 {
+    height: 46px !important;
+    min-height: 46px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 0 10px !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Descriptions all begin from the same level */
+  .what-card p {
+    margin-top: 0 !important;
+  }
+}
