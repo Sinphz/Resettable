@@ -993,3 +993,21 @@ h1,h2,h3,p{margin-top:0}
     margin-right: -5% !important;
   }
 }
+
+/* PHONE ONLY — tidy What We Can Help With text wrapping */
+@media screen and (max-width: 560px) {
+
+  .what-we-do .what-card p {
+    width: 92% !important;
+    max-width: 220px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Create Spaces gets slightly more room */
+  .what-we-do .what-card:nth-child(3) p {
+    width: 98% !important;
+    max-width: 240px !important;
+  }
+}
