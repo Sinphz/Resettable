@@ -883,3 +883,39 @@ h1,h2,h3,p{margin-top:0}
     line-height: 1.4 !important;
   }
 }
+
+/* PHONE LANDSCAPE — return to one row of four */
+@media screen and (max-height: 560px) and (orientation: landscape) {
+
+  .what-we-do .what-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    width: 100% !important;
+  }
+
+  .what-we-do .what-card {
+    width: auto !important;
+    min-width: 0 !important;
+    min-height: 190px !important;
+    padding: 18px 10px !important;
+
+    border-bottom: 0 !important;
+    border-right: 1px solid var(--line) !important;
+  }
+
+  .what-we-do .what-card:last-child {
+    border-right: 0 !important;
+  }
+
+  .what-we-do .what-card h3 {
+    font-size: 0.62rem !important;
+    line-height: 1.2 !important;
+    min-height: 2.4em !important;
+  }
+
+  .what-we-do .what-card p {
+    font-size: 0.60rem !important;
+    line-height: 1.4 !important;
+    max-width: 150px !important;
+  }
+}
