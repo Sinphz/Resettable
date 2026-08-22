@@ -919,3 +919,45 @@ h1,h2,h3,p{margin-top:0}
     max-width: 150px !important;
   }
 }
+
+/* =========================================
+   ALIGN SERVICE CARD TEXT — PHONE + TABLET
+   ========================================= */
+
+@media screen and (max-width: 850px) {
+
+  /* Give every card title the same vertical space */
+  .space-copy h3 {
+    min-height: 2.4em !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 0 8px !important;
+  }
+
+  /* Make every description begin at the same height */
+  .space-copy p {
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+}
+
+/* Tablet — keep Workspaces & Organisations on one line */
+@media screen and (min-width: 561px) and (max-width: 850px) {
+
+  .space-copy h3 {
+    white-space: nowrap !important;
+  }
+
+  .space-card:nth-child(3) .space-copy p {
+    max-width: 95% !important;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 560px) {
+
+  .space-copy h3 {
+    min-height: 2.6em !important;
+  }
+}
