@@ -961,3 +961,24 @@ h1,h2,h3,p{margin-top:0}
     min-height: 2.6em !important;
   }
 }
+
+/* FAQ answers — smaller than the questions */
+.faq-list details p {
+  font-size: 0.66rem !important;
+  line-height: 1.5 !important;
+  color: var(--muted) !important;
+}
+
+/* Tablet */
+@media (min-width: 561px) and (max-width: 850px) {
+  .faq-list details p {
+    font-size: 0.64rem !important;
+  }
+}
+
+/* Phone */
+@media (max-width: 560px) {
+  .faq-list details p {
+    font-size: 0.62rem !important;
+  }
+}
