@@ -1011,3 +1011,21 @@ h1,h2,h3,p{margin-top:0}
     max-width: 240px !important;
   }
 }
+
+/* PHONE LANDSCAPE — align all four help headings */
+@media screen and (max-height: 560px) and (orientation: landscape) {
+
+  .what-we-do .what-card h3 {
+    height: 42px !important;
+    min-height: 42px !important;
+    margin: 12px 0 10px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .what-we-do .what-card p {
+    margin-top: 0 !important;
+  }
+}
