@@ -839,7 +839,7 @@ h1,h2,h3,p{margin-top:0}
    FINAL MOBILE WHAT-WE-CAN-HELP-WITH LAYOUT
    ========================================= */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 560px) {
 
   .what-we-do .what-grid {
     display: grid !important;
