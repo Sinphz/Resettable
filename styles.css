@@ -1291,3 +1291,80 @@ h1,h2,h3,p{margin-top:0}
     text-align: center !important;
   }
 }
+
+
+/* ==========================================================
+   FINAL QUICK / FULL RESET ALIGNMENT
+   Keeps the two cards aligned in phone landscape without
+   affecting portrait, tablet or desktop.
+   ========================================================== */
+
+@media screen and (max-height: 560px) and (orientation: landscape) {
+
+  .reset-level-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+  }
+
+  .reset-level-card {
+    height: 100% !important;
+    min-height: 118px !important;
+
+    display: grid !important;
+    grid-template-columns: 42px minmax(0, 1fr) !important;
+    align-items: start !important;
+    gap: 12px !important;
+
+    padding: 16px 18px !important;
+  }
+
+  .reset-level-icon {
+    width: 42px !important;
+    height: 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* The text side of both cards gets identical rows:
+     badge first, description second. */
+  .reset-level-card > div:last-child {
+    display: grid !important;
+    grid-template-rows: 30px auto !important;
+    align-content: start !important;
+    min-width: 0 !important;
+  }
+
+  .reset-level-card span {
+    grid-row: 1 !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    justify-self: start !important;
+    align-self: start !important;
+
+    height: 26px !important;
+    min-height: 26px !important;
+
+    margin: 0 !important;
+    padding: 3px 11px !important;
+
+    line-height: 1 !important;
+  }
+
+  .reset-level-card p {
+    grid-row: 2 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    align-self: start !important;
+  }
+}
