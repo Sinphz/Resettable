@@ -2088,3 +2088,29 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   FINAL MENU POSITION — PUSH MENU + DROPDOWN TOWARD RIGHT EDGE
+   ========================================================== */
+
+/* Tablet */
+@media (min-width:561px) and (max-width:850px){
+  .menu-toggle{
+    margin-right:-6vw !important;
+  }
+
+  .site-nav{
+    right:2vw !important;
+  }
+}
+
+/* Phone */
+@media (max-width:560px){
+  .menu-toggle{
+    margin-right:-3vw !important;
+  }
+
+  .site-nav{
+    right:2vw !important;
+  }
+}
+
