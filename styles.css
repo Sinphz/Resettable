@@ -1989,7 +1989,6 @@ h1,h2,h3,p{margin-top:0}
 
 /* ==========================================================
    FINAL MOBILE / TABLET MENU — COMPACT RIGHT DROPDOWN
-   Keeps the existing header height/logo and page styling.
    ========================================================== */
 @media (max-width:850px){
 
@@ -2028,6 +2027,28 @@ h1,h2,h3,p{margin-top:0}
   .site-nav .nav-button{
     align-self:center !important;
     margin-top:2px !important;
+  }
+}
+
+
+/* ==========================================================
+   FINAL MENU POSITION — TUCKED UNDER MENU ON THE RIGHT
+   ========================================================== */
+@media (max-width:850px){
+  .site-nav{
+    left:auto !important;
+    right:5vw !important;
+    width:190px !important;
+    max-width:calc(100vw - 10vw) !important;
+    padding:14px 14px 16px !important;
+  }
+}
+
+@media (max-width:560px){
+  .site-nav{
+    right:5vw !important;
+    width:170px !important;
+    max-width:calc(100vw - 10vw) !important;
   }
 }
 
