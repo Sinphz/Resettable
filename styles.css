@@ -2354,3 +2354,21 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   FINAL DARK-MODE HERO FIX
+   1) Keep the italic "reset." visible in dark mode.
+   2) Slightly overscan the phone hero background to remove
+      the thin white seam at the far-right edge on mobile Safari.
+   ========================================================== */
+@media (prefers-color-scheme:dark){
+  .hero h1 em{
+    color:var(--sage-light) !important;
+  }
+}
+
+@media (max-width:560px){
+  .hero{
+    background-size:101% 101% !important;
+  }
+}
+
