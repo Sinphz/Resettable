@@ -1986,3 +1986,48 @@ h1,h2,h3,p{margin-top:0}
     padding:0 !important;
   }
 }
+
+/* ==========================================================
+   FINAL MOBILE / TABLET MENU — COMPACT RIGHT DROPDOWN
+   Keeps the existing header height/logo and page styling.
+   ========================================================== */
+@media (max-width:850px){
+
+  .menu-toggle{
+    font-size:13px !important;
+    line-height:1 !important;
+    padding:0 !important;
+  }
+
+  .site-nav{
+    display:none !important;
+    position:absolute !important;
+    top:100% !important;
+    left:auto !important;
+    right:5vw !important;
+    width:min(240px, 72vw) !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    gap:12px !important;
+    padding:16px 18px 18px !important;
+    background:var(--deep) !important;
+    text-align:center !important;
+    border-radius:0 0 10px 10px !important;
+    box-shadow:0 14px 30px rgba(0,0,0,.14) !important;
+  }
+
+  .site-nav.open{
+    display:flex !important;
+  }
+
+  .site-nav a{
+    width:auto !important;
+    text-align:center !important;
+  }
+
+  .site-nav .nav-button{
+    align-self:center !important;
+    margin-top:2px !important;
+  }
+}
+
