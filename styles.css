@@ -2304,3 +2304,15 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   TABLET ONLY — FINAL LOGO POSITION
+   Bring the logo slightly back to the right from the previous
+   tablet-only position. Desktop, phone and menu unchanged.
+   ========================================================== */
+@media (min-width:561px) and (max-width:850px){
+  .site-header > a:first-child,
+  .site-header .future-brand{
+    margin-left:-34px !important;
+  }
+}
+
