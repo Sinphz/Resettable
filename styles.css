@@ -2067,3 +2067,24 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   FINAL MENU CONTENT ALIGNMENT — TEXT TO THE RIGHT
+   ========================================================== */
+@media (max-width:850px){
+  .site-nav{
+    align-items:flex-end !important;
+    text-align:right !important;
+  }
+
+  .site-nav a{
+    width:auto !important;
+    text-align:right !important;
+    align-self:flex-end !important;
+  }
+
+  .site-nav .nav-button{
+    align-self:flex-end !important;
+    text-align:center !important;
+  }
+}
+
