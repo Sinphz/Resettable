@@ -1960,3 +1960,29 @@ h1,h2,h3,p{margin-top:0}
     width:82px !important;
   }
 }
+
+
+/* ==========================================================
+   FINAL MOBILE / TABLET MENU POLISH
+   ========================================================== */
+@media (max-width:850px){
+  .site-nav{
+    align-items:center !important;
+    text-align:center !important;
+  }
+
+  .site-nav a{
+    width:auto !important;
+    text-align:center !important;
+  }
+
+  .site-nav .nav-button{
+    align-self:center !important;
+  }
+
+  .menu-toggle{
+    font-size:11px !important;
+    line-height:1 !important;
+    padding:0 !important;
+  }
+}
