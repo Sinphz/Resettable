@@ -2052,3 +2052,18 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   FINAL MENU ANCHOR — SIZE TO CONTENT, DIRECTLY UNDER MENU
+   ========================================================== */
+@media (max-width:850px){
+  .site-nav{
+    left:auto !important;
+    right:5vw !important;
+    width:max-content !important;
+    min-width:0 !important;
+    max-width:calc(100vw - 10vw) !important;
+    padding:14px 14px 16px !important;
+    align-items:center !important;
+  }
+}
+
