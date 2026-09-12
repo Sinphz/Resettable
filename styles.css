@@ -2292,13 +2292,15 @@ h1,h2,h3,p{margin-top:0}
 }
 
 /* ==========================================================
-   TABLET ONLY — DIRECT LOGO MOVE TO SCREEN LEFT
-   This moves the logo image itself, so header/menu positioning
-   and desktop/phone layouts remain untouched.
+   TABLET ONLY — MOVE THE BRAND ANCHOR LEFT
+   Targets the actual first link in the header, so this works
+   even if the logo image class is not the element controlling
+   horizontal placement.
    ========================================================== */
 @media (min-width:561px) and (max-width:850px){
-  .future-brand-logo{
-    transform:translateX(-36px) !important;
+  .site-header > a:first-child,
+  .site-header .future-brand{
+    margin-left:-52px !important;
   }
 }
 
