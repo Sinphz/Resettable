@@ -2150,12 +2150,11 @@ h1,h2,h3,p{margin-top:0}
 
 /* ==========================================================
    FINAL MENU LABEL ALIGNMENT
-   Move only the Menu label slightly left toward the logo.
-   Dropdown stays exactly where it is.
+   Nudge Menu slightly left; dropdown stays exactly in place.
    ========================================================== */
 @media (max-width:850px){
   .menu-toggle{
-    transform:translateX(-6px) !important;
+    transform:translateX(-8px) !important;
   }
 }
 
