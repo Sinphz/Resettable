@@ -2301,3 +2301,17 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   TABLET ONLY — MOVE RESETTABLE LOGO FURTHER TO SCREEN LEFT
+   Desktop and phone unchanged. Menu/right side unchanged.
+   ========================================================== */
+@media (min-width:561px) and (max-width:850px){
+  .site-header{
+    padding-left:2vw !important;
+  }
+
+  .future-brand{
+    transform:none !important;
+  }
+}
+
