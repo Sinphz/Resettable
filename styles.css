@@ -2326,3 +2326,19 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+
+
+/* ==========================================================
+   FINAL PHONE + TABLET MENU BALANCE
+   Logo stays exactly where it is. Desktop remains untouched.
+   ========================================================== */
+@media (max-width:850px){
+  .menu-toggle{
+    font-size:15px !important;
+    transform:translateX(-12px) !important;
+  }
+
+  .site-nav{
+    right:calc(2vw + 12px) !important;
+  }
+}
