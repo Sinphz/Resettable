@@ -2342,3 +2342,15 @@ h1,h2,h3,p{margin-top:0}
     right:calc(2vw + 12px) !important;
   }
 }
+
+/* ==========================================================
+   PHONE + TABLET DROPDOWN — COVER RIGHT EDGE
+   Menu label stays exactly where it is.
+   Only the opened dropdown reaches the screen's right edge.
+   ========================================================== */
+@media (max-width:850px){
+  .site-nav{
+    right:0 !important;
+  }
+}
+
