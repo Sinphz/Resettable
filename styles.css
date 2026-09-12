@@ -1919,3 +1919,44 @@ h1,h2,h3,p{margin-top:0}
   box-shadow:0 18px 42px rgba(29,43,33,.13) !important;
   outline:none !important;
 }
+
+
+/* =========================================================
+   HEADER — MATCH THE SMALLER LIVE VERSION
+   Header height/layout unchanged.
+   Only logo + header text/button sizing reduced.
+   ========================================================= */
+
+.future-brand-logo{
+  width:82px !important;
+}
+
+.site-nav a{
+  font-size:9px !important;
+}
+
+.site-nav .nav-button{
+  font-size:9px !important;
+  padding:8px 14px !important;
+}
+
+@media (min-width:561px) and (max-width:850px){
+  .future-brand-logo{
+    width:82px !important;
+  }
+
+  .site-nav a{
+    font-size:9px !important;
+  }
+
+  .site-nav .nav-button{
+    font-size:9px !important;
+    padding:8px 14px !important;
+  }
+}
+
+@media (max-width:560px){
+  .future-brand-logo{
+    width:82px !important;
+  }
+}
