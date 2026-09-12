@@ -2149,29 +2149,13 @@ h1,h2,h3,p{margin-top:0}
 }
 
 /* ==========================================================
-   FINAL MENU ALIGNMENT — MATCH MENU LABEL + DROPDOWN EDGE
+   FINAL MENU LABEL ALIGNMENT
+   Move only the Menu label slightly left toward the logo.
+   Dropdown stays exactly where it is.
    ========================================================== */
 @media (max-width:850px){
-  .site-header{
-    padding-right:4vw !important;
-  }
-
   .menu-toggle{
-    margin-right:0 !important;
-  }
-
-  .site-nav{
-    right:4vw !important;
-  }
-}
-
-@media (max-width:560px){
-  .site-header{
-    padding-right:4vw !important;
-  }
-
-  .site-nav{
-    right:4vw !important;
+    transform:translateX(-6px) !important;
   }
 }
 
