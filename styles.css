@@ -2114,3 +2114,37 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   MOBILE / TABLET HEADER — TRUE RIGHT-EDGE MENU POSITION
+   Keep the logo where it is; reduce only the header's right padding.
+   ========================================================== */
+@media (max-width:850px){
+  .site-header{
+    padding-left:8vw !important;
+    padding-right:2vw !important;
+  }
+
+  .menu-toggle{
+    margin-right:0 !important;
+  }
+
+  .site-nav{
+    right:2vw !important;
+  }
+}
+
+@media (max-width:560px){
+  .site-header{
+    padding-left:5vw !important;
+    padding-right:2vw !important;
+  }
+
+  .menu-toggle{
+    margin-right:0 !important;
+  }
+
+  .site-nav{
+    right:2vw !important;
+  }
+}
+
