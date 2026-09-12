@@ -2292,26 +2292,13 @@ h1,h2,h3,p{margin-top:0}
 }
 
 /* ==========================================================
-   TABLET ONLY — MOVE RESETTABLE LOGO FURTHER LEFT
-   Desktop and phone remain exactly unchanged.
+   TABLET ONLY — DIRECT LOGO MOVE TO SCREEN LEFT
+   This moves the logo image itself, so header/menu positioning
+   and desktop/phone layouts remain untouched.
    ========================================================== */
 @media (min-width:561px) and (max-width:850px){
-  .future-brand{
-    transform:translateX(-28px) !important;
-  }
-}
-
-/* ==========================================================
-   TABLET ONLY — MOVE RESETTABLE LOGO FURTHER TO SCREEN LEFT
-   Desktop and phone unchanged. Menu/right side unchanged.
-   ========================================================== */
-@media (min-width:561px) and (max-width:850px){
-  .site-header{
-    padding-left:2vw !important;
-  }
-
-  .future-brand{
-    transform:none !important;
+  .future-brand-logo{
+    transform:translateX(-36px) !important;
   }
 }
 
