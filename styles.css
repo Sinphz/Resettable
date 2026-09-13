@@ -3767,16 +3767,24 @@ h1,h2,h3,p{margin-top:0}
 
 /* ==========================================================
    PHONE LANDSCAPE — TYPOGRAPHY CORRECTION ONLY
+   Prevent mobile Safari from enlarging body copy in landscape.
    Portrait, tablet and desktop remain unchanged.
    ========================================================== */
 @media screen and (max-height:560px) and (orientation:landscape){
+  html{
+    -webkit-text-size-adjust:100% !important;
+    text-size-adjust:100% !important;
+  }
+
   .about-panel h2,
   .about-panel > p:not(.eyebrow){
     font-size:.68rem !important;
   }
+
   .faq-list summary{
     font-size:.70rem !important;
   }
+
   .faq-list details p{
     font-size:.66rem !important;
   }
