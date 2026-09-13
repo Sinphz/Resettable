@@ -3807,5 +3807,6 @@ h1,h2,h3,p{margin-top:0}
 @media (max-width:560px){
   .hero p{
     font-size:.57rem !important;
+    margin-top:10px !important;
   }
 }
