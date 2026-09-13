@@ -2434,3 +2434,10 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+
+/* TABLET ONLY — balance Menu inset with logo */
+@media (min-width:561px) and (max-width:850px){
+  .menu-toggle{
+    transform:translateX(-22px) !important;
+  }
+}
