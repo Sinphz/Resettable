@@ -3564,3 +3564,91 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   DESKTOP — FINAL BALANCED TYPE + CREATE SPACES ALIGNMENT
+   Desktop only. Tablet/mobile untouched.
+   ========================================================== */
+@media (min-width:851px){
+
+  /* Bring desktop typography up slightly from the current
+     refined version, but keep it clearly softer than before. */
+  .hero h1{font-size:1.58rem !important;}
+  .hero p{font-size:.86rem !important;}
+  .hero .button{font-size:.75rem !important;}
+
+  .space-copy h2{font-size:.85rem !important;}
+  .space-copy p{font-size:.79rem !important;}
+
+  .section-title h2{font-size:.96rem !important;}
+
+  .what-card h3{font-size:.75rem !important;}
+  .what-card p{font-size:.79rem !important;}
+
+  .reset-level-card span{font-size:.68rem !important;}
+  .reset-level-card p{font-size:.79rem !important;}
+
+  .cta-strip h2{font-size:1rem !important;}
+  .cta-strip p{font-size:.79rem !important;}
+
+  .process-step h3{font-size:.79rem !important;}
+  .process-step p{font-size:.75rem !important;}
+
+  .faq-list summary{font-size:.70rem !important;}
+  .faq-list details p{font-size:.74rem !important;}
+
+  .eyebrow{font-size:.72rem !important;}
+  .about-panel h2,
+  .about-panel > p:not(.eyebrow){font-size:.76rem !important;}
+
+  .badge{font-size:.68rem !important;}
+  .request-intro{font-size:.76rem !important;}
+  .reset-form label span{font-size:.70rem !important;}
+  .reset-form input,
+  .reset-form select,
+  .reset-form textarea{font-size:.76rem !important;}
+
+  .site-footer p{font-size:.66rem !important;}
+
+  /* Rebuild the help cards into equal vertical tracks so
+     all four titles and descriptions line up identically. */
+  .what-card{
+    display:grid !important;
+    grid-template-rows:42px 24px auto !important;
+    align-content:start !important;
+    align-items:start !important;
+  }
+
+  .what-card .line-icon,
+  .what-card .create-spaces-icon{
+    grid-row:1 !important;
+    align-self:center !important;
+    justify-self:center !important;
+    margin:0 !important;
+  }
+
+  .what-card .create-spaces-icon{
+    width:30px !important;
+    height:30px !important;
+    min-height:30px !important;
+    transform:scale(.82) !important;
+    transform-origin:center center !important;
+  }
+
+  .what-card h3{
+    grid-row:2 !important;
+    min-height:24px !important;
+    margin:0 !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    line-height:1.2 !important;
+  }
+
+  .what-card p{
+    grid-row:3 !important;
+    margin:0 auto !important;
+    align-self:start !important;
+    text-align:center !important;
+  }
+}
+
