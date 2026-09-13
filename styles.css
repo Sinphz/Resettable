@@ -2638,3 +2638,14 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   TABLET ONLY — ALIGN DROPDOWN ITEMS DIRECTLY UNDER "MENU"
+   Desktop and phone remain untouched.
+   ========================================================== */
+@media (min-width:561px) and (max-width:850px){
+  .site-nav > a,
+  .site-nav .nav-button{
+    transform:translateX(-46px) !important;
+  }
+}
+
