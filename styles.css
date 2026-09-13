@@ -3789,3 +3789,13 @@ h1,h2,h3,p{margin-top:0}
     font-size:.66rem !important;
   }
 }
+
+/* ==========================================================
+   MOBILE + TABLET — MENU LABEL FIRST, HAMBURGER ON RIGHT
+   Desktop and drawer behaviour remain unchanged.
+   ========================================================== */
+@media (max-width:850px){
+  .menu-toggle{
+    flex-direction:row-reverse !important;
+  }
+}
