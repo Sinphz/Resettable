@@ -2434,10 +2434,186 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   DESKTOP RESTORE — KEEP TABLET / PHONE WORK ISOLATED
+   Restore the approved desktop presentation above 850px.
+   No tablet or phone rules are changed here.
+   ========================================================== */
+@media (min-width:851px){
 
-/* TABLET ONLY — balance Menu inset with logo */
-@media (min-width:561px) and (max-width:850px){
+  /* Header / logo */
+  .site-header{
+    min-height:54px !important;
+    padding:6px 8vw !important;
+  }
+
+  .future-brand-logo{
+    width:82px !important;
+  }
+
+  .site-nav{
+    display:flex !important;
+    position:static !important;
+    width:auto !important;
+    max-width:none !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    gap:24px !important;
+    padding:0 !important;
+    background:transparent !important;
+    border-radius:0 !important;
+    box-shadow:none !important;
+    text-align:left !important;
+  }
+
+  .site-nav a{
+    font-size:.72rem !important;
+    align-self:auto !important;
+    text-align:left !important;
+  }
+
+  .site-nav .nav-button{
+    font-size:.72rem !important;
+    padding:9px 15px !important;
+    align-self:auto !important;
+  }
+
   .menu-toggle{
-    transform:translateX(-22px) !important;
+    display:none !important;
+    transform:none !important;
+  }
+
+  /* Hero — restore approved desktop scale */
+  .hero{
+    min-height:300px !important;
+  }
+
+  .hero-copy{
+    width:52% !important;
+    padding-left:8vw !important;
+    text-align:center !important;
+  }
+
+  .hero h1{
+    max-width:470px !important;
+    margin:0 auto 10px !important;
+    font-size:1.5rem !important;
+    line-height:1.18 !important;
+    white-space:normal !important;
+  }
+
+  .hero p{
+    max-width:330px !important;
+    margin:0 auto 18px !important;
+    font-size:.88rem !important;
+    line-height:1.55 !important;
+    white-space:normal !important;
+  }
+
+  /* Service cards — full desktop treatment */
+  .space-cards-wrap{
+    padding-left:8vw !important;
+    padding-right:8vw !important;
+  }
+
+  .space-cards{
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    gap:16px !important;
+  }
+
+  .space-copy{
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    min-height:104px !important;
+    padding:13px 14px !important;
+  }
+
+  .space-copy h2{
+    width:auto !important;
+    height:auto !important;
+    min-height:2.2em !important;
+    margin:0 0 5px !important;
+    padding:0 !important;
+    font-size:.8rem !important;
+    line-height:normal !important;
+  }
+
+  .space-copy p{
+    width:auto !important;
+    margin:0 !important;
+    padding:0 !important;
+    font-size:.78rem !important;
+    line-height:1.45 !important;
+  }
+
+  /* What We Can Help With — desktop 4-column layout */
+  .what-we-do{
+    padding-left:8vw !important;
+    padding-right:8vw !important;
+  }
+
+  .what-grid{
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+  }
+
+  .what-card{
+    display:block !important;
+    min-height:0 !important;
+    padding:10px 22px !important;
+    border-right:1px solid var(--line) !important;
+    border-bottom:0 !important;
+  }
+
+  .what-card:last-child{
+    border-right:0 !important;
+  }
+
+  .what-card .line-icon{
+    width:auto !important;
+    height:auto !important;
+    min-height:0 !important;
+    margin:0 0 8px !important;
+  }
+
+  .what-card .create-spaces-icon{
+    width:38px !important;
+    height:38px !important;
+    min-height:0 !important;
+    margin:0 auto 8px !important;
+    transform:none !important;
+  }
+
+  .what-card h3{
+    width:auto !important;
+    height:auto !important;
+    min-height:0 !important;
+    margin:0 0 5px !important;
+    padding:0 !important;
+    font-size:.7rem !important;
+    line-height:normal !important;
+  }
+
+  .what-card p{
+    margin:0 !important;
+    padding:0 !important;
+    font-size:.78rem !important;
+    line-height:1.45 !important;
   }
 }
+
+/* DESKTOP ONLY — keep hero supporting sentence on one line */
+@media (min-width:851px){
+  .hero p{
+    max-width:none !important;
+    white-space:nowrap !important;
+  }
+}
+
+/* TABLET ONLY — pull Menu further left */
+@media (min-width:561px) and (max-width:850px){
+  .menu-toggle{
+    transform:translateX(-34px) !important;
+  }
+}
+
