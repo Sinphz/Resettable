@@ -3448,3 +3448,60 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   DESKTOP TYPOGRAPHY — FINAL REFINED SCALE + HELP ALIGNMENT
+   Desktop only. Tablet, phone, layout and imagery untouched.
+   ========================================================== */
+@media (min-width:851px){
+  .hero h1{font-size:1.52rem !important;}
+  .hero p{font-size:.82rem !important;}
+  .hero .button{font-size:.72rem !important;}
+
+  .space-copy h2{font-size:.82rem !important;}
+  .space-copy p{font-size:.76rem !important;}
+
+  .section-title h2{font-size:.92rem !important;}
+
+  .what-card h3{font-size:.72rem !important;}
+  .what-card p{font-size:.76rem !important;}
+
+  .reset-level-card span{font-size:.66rem !important;}
+  .reset-level-card p{font-size:.76rem !important;}
+
+  .cta-strip h2{font-size:.96rem !important;}
+  .cta-strip p{font-size:.76rem !important;}
+
+  .process-step h3{font-size:.76rem !important;}
+  .process-step p{font-size:.72rem !important;}
+
+  .faq-list summary{font-size:.68rem !important;}
+  .faq-list details p{font-size:.72rem !important;}
+
+  .eyebrow{font-size:.70rem !important;}
+  .about-panel h2,
+  .about-panel > p:not(.eyebrow){font-size:.74rem !important;}
+
+  .badge{font-size:.66rem !important;}
+  .request-intro{font-size:.74rem !important;}
+  .reset-form label span{font-size:.68rem !important;}
+  .reset-form input,
+  .reset-form select,
+  .reset-form textarea{font-size:.74rem !important;}
+
+  .site-footer p{font-size:.64rem !important;}
+
+  /* Keep all four help headings on the same horizontal line */
+  .what-card{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+  }
+
+  .what-card h3{
+    min-height:1.25em !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+  }
+}
+
