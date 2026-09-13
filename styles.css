@@ -3652,3 +3652,53 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   MOBILE + TABLET — FINAL DRAWER HEADER ALIGNMENT
+   MENU title and close X share the same vertical row.
+   Desktop remains untouched.
+   ========================================================== */
+@media (max-width:850px){
+
+  /* Shared top position for both drawer heading and close button */
+  .site-nav::before,
+  .menu-toggle[aria-expanded="true"]{
+    top:calc(env(safe-area-inset-top, 0px) + 24px) !important;
+  }
+
+  /* Give MENU a fixed row height */
+  .site-nav::before{
+    height:36px !important;
+    display:flex !important;
+    align-items:center !important;
+    line-height:1 !important;
+  }
+
+  /* Give the close control the exact same row height */
+  .menu-toggle[aria-expanded="true"]{
+    width:36px !important;
+    height:36px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+  }
+
+  /* Centre the × glyph inside that row instead of relying on font baseline */
+  .menu-toggle[aria-expanded="true"]::before{
+    width:36px !important;
+    height:36px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    line-height:1 !important;
+    transform:none !important;
+  }
+}
+
+/* Phone uses the same header row — no separate top offset */
+@media (max-width:560px){
+  .site-nav::before,
+  .menu-toggle[aria-expanded="true"]{
+    top:calc(env(safe-area-inset-top, 0px) + 24px) !important;
+  }
+}
+
