@@ -3337,3 +3337,114 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   DESKTOP TYPOGRAPHY — SOFTER FINAL SCALE
+   Desktop only. Tablet, phone, layout and imagery untouched.
+   ========================================================== */
+@media (min-width:851px){
+
+  /* Keep the hero elegant rather than oversized */
+  .hero h1{
+    font-size:1.65rem !important;
+  }
+
+  .hero p{
+    font-size:.90rem !important;
+  }
+
+  .hero .button{
+    font-size:.78rem !important;
+    padding:10px 21px !important;
+  }
+
+  /* Service cards */
+  .space-copy h2{
+    font-size:.88rem !important;
+  }
+
+  .space-copy p{
+    font-size:.82rem !important;
+  }
+
+  /* Section headings + help cards */
+  .section-title h2{
+    font-size:1rem !important;
+  }
+
+  .what-card h3{
+    font-size:.78rem !important;
+  }
+
+  .what-card p{
+    font-size:.82rem !important;
+  }
+
+  /* Quick / Full reset */
+  .reset-level-card span{
+    font-size:.70rem !important;
+  }
+
+  .reset-level-card p{
+    font-size:.82rem !important;
+  }
+
+  /* CTA */
+  .cta-strip h2{
+    font-size:1.05rem !important;
+  }
+
+  .cta-strip p{
+    font-size:.82rem !important;
+  }
+
+  /* How it works */
+  .process-step h3{
+    font-size:.82rem !important;
+  }
+
+  .process-step p{
+    font-size:.78rem !important;
+  }
+
+  /* FAQ */
+  .faq-list summary{
+    font-size:.72rem !important;
+  }
+
+  .faq-list details p{
+    font-size:.76rem !important;
+  }
+
+  /* About / request */
+  .eyebrow{
+    font-size:.74rem !important;
+  }
+
+  .about-panel h2,
+  .about-panel > p:not(.eyebrow){
+    font-size:.78rem !important;
+  }
+
+  .badge{
+    font-size:.70rem !important;
+  }
+
+  .request-intro{
+    font-size:.78rem !important;
+  }
+
+  .reset-form label span{
+    font-size:.72rem !important;
+  }
+
+  .reset-form input,
+  .reset-form select,
+  .reset-form textarea{
+    font-size:.78rem !important;
+  }
+
+  .site-footer p{
+    font-size:.68rem !important;
+  }
+}
+
