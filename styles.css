@@ -3258,3 +3258,24 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   FINAL SLIDE-OUT X POSITION
+   Move the close control slightly down and in from the
+   top-right so Safari/device chrome cannot crowd it.
+   ========================================================== */
+@media (max-width:850px){
+  .menu-toggle[aria-expanded="true"]{
+    top:calc(env(safe-area-inset-top, 0px) + 30px) !important;
+    right:26px !important;
+    width:42px !important;
+    height:42px !important;
+  }
+}
+
+@media (max-width:560px){
+  .menu-toggle[aria-expanded="true"]{
+    top:calc(env(safe-area-inset-top, 0px) + 28px) !important;
+    right:22px !important;
+  }
+}
+
