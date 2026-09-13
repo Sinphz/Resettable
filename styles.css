@@ -3231,3 +3231,30 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   FINAL SLIDE-OUT CLOSE FIX
+   The old backdrop sat in a higher root stacking layer than
+   the sticky header, so it could intercept taps on the X.
+   Keep the backdrop below the header/drawer instead.
+   ========================================================== */
+@media (max-width:850px){
+
+  body:has(.site-nav.open)::before{
+    z-index:40 !important;
+  }
+
+  .site-header{
+    z-index:1200 !important;
+  }
+
+  .site-nav{
+    z-index:1210 !important;
+  }
+
+  .menu-toggle[aria-expanded="true"]{
+    z-index:1220 !important;
+    pointer-events:auto !important;
+    touch-action:manipulation !important;
+  }
+}
+
