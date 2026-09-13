@@ -3801,30 +3801,16 @@ h1,h2,h3,p{margin-top:0}
 }
 
 /* ==========================================================
-   PHONE ONLY — HERO SUPPORTING TEXT
-   Slightly larger for readability without competing with H1.
-   ========================================================== */
-@media (max-width:560px){
-  .hero p{
-    font-size:.57rem !important;
-    margin-top:10px !important;
-  }
-}
-
-/* ==========================================================
-   PHONE PORTRAIT — HERO TEXT SPACING FIX
-   Adjacent vertical margins collapse, so increasing the
-   paragraph's margin-top did not create extra separation.
-   Put the spacing on the headline instead.
+   PHONE PORTRAIT — FINAL HERO TYPE HIERARCHY
+   Supporting sentence only. Landscape/tablet/desktop untouched.
    ========================================================== */
 @media (max-width:560px) and (orientation:portrait){
   .hero h1{
-    margin-bottom:16px !important;
+    margin-bottom:10px !important;
   }
 
   .hero p{
-    font-size:.57rem !important;
+    font-size:.52rem !important;
     margin-top:0 !important;
   }
 }
-
