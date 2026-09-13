@@ -2379,3 +2379,13 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   PHONE — SLIGHTLY SMALLER HERO HEADLINE
+   Tablet and desktop remain unchanged.
+   ========================================================== */
+@media (max-width:560px){
+  .hero h1{
+    font-size:.94rem !important;
+  }
+}
+
