@@ -3744,3 +3744,40 @@ h1,h2,h3,p{margin-top:0}
   .badge{font-size:.66rem!important}.request-intro{font-size:.73rem!important}.reset-form label span{font-size:.69rem!important}
   .reset-form input,.reset-form select,.reset-form textarea{font-size:.75rem!important}.site-footer p{font-size:.63rem!important}
 }
+
+/* ==========================================================
+   MOBILE + TABLET — SMALLER HAMBURGER ICON ONLY
+   Menu text, positioning and desktop remain unchanged.
+   ========================================================== */
+@media (max-width:850px){
+  .menu-toggle::before{
+    width:16px !important;
+    height:11px !important;
+    background:
+      linear-gradient(currentColor,currentColor) 0 0 / 100% 1.5px no-repeat,
+      linear-gradient(currentColor,currentColor) 0 50% / 100% 1.5px no-repeat,
+      linear-gradient(currentColor,currentColor) 0 100% / 100% 1.5px no-repeat !important;
+  }
+  .menu-toggle[aria-expanded="true"]::before{
+    width:36px !important;
+    height:36px !important;
+    background:none !important;
+  }
+}
+
+/* ==========================================================
+   PHONE LANDSCAPE — TYPOGRAPHY CORRECTION ONLY
+   Portrait, tablet and desktop remain unchanged.
+   ========================================================== */
+@media screen and (max-height:560px) and (orientation:landscape){
+  .about-panel h2,
+  .about-panel > p:not(.eyebrow){
+    font-size:.68rem !important;
+  }
+  .faq-list summary{
+    font-size:.70rem !important;
+  }
+  .faq-list details p{
+    font-size:.66rem !important;
+  }
+}
