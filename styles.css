@@ -2868,3 +2868,16 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   FINAL TABLET MENU TEXT ALIGNMENT
+   Keep the Menu trigger and dropdown panel in place.
+   Shift only the dropdown contents slightly right so they
+   sit directly beneath "Menu".
+   ========================================================== */
+@media (min-width:561px) and (max-width:850px){
+  .site-nav > a,
+  .site-nav .nav-button{
+    transform:translateX(18px) !important;
+  }
+}
+
