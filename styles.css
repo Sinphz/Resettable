@@ -2366,9 +2366,16 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   FINAL PHONE HERO EDGE FIX
+   Crop only the hero photo layer so the pale strip at the
+   far-right edge is pushed completely off-screen.
+   The gradient and hero layout stay unchanged.
+   ========================================================== */
 @media (max-width:560px){
   .hero{
-    background-size:101% 101% !important;
+    background-size:100% 100%, 110% auto !important;
+    background-position:center center, left center !important;
   }
 }
 
