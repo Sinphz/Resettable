@@ -2389,3 +2389,48 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   FINAL HERO TEXT — DESKTOP + PHONE ONLY
+   Keep both hero text lines on one line.
+   Tablet (561px–850px) remains completely unchanged.
+   ========================================================== */
+
+/* Desktop / laptop */
+@media (min-width:851px){
+  .hero-copy{
+    width:58% !important;
+  }
+
+  .hero h1{
+    max-width:none !important;
+    font-size:1.38rem !important;
+    white-space:nowrap !important;
+  }
+
+  .hero p{
+    max-width:none !important;
+    font-size:.78rem !important;
+    white-space:nowrap !important;
+  }
+}
+
+/* Phone */
+@media (max-width:560px){
+  .hero-copy{
+    width:68% !important;
+    padding-left:3vw !important;
+  }
+
+  .hero h1{
+    max-width:none !important;
+    font-size:.72rem !important;
+    white-space:nowrap !important;
+  }
+
+  .hero p{
+    max-width:none !important;
+    font-size:.49rem !important;
+    white-space:nowrap !important;
+  }
+}
+
