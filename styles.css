@@ -2881,3 +2881,14 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   PHONE HEADER / HERO SEAM FIX
+   Remove the occasional 1px white rendering gap on iPhone
+   without changing the header, hero crop, logo or menu.
+   ========================================================== */
+@media (max-width:560px){
+  .hero{
+    margin-top:-1px !important;
+  }
+}
+
