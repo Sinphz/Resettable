@@ -2649,3 +2649,35 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   FINAL MENU DROPDOWN — TABLET ALIGNMENT + BOXED CORNERS
+   Desktop remains untouched.
+   ========================================================== */
+
+/* Tablet: center dropdown contents directly beneath "Menu" */
+@media (min-width:561px) and (max-width:850px){
+  .site-nav{
+    right:0 !important;
+    width:190px !important;
+    max-width:190px !important;
+    padding:14px 14px 16px !important;
+    align-items:center !important;
+    text-align:center !important;
+    border-radius:0 0 2px 2px !important;
+  }
+
+  .site-nav > a,
+  .site-nav .nav-button{
+    align-self:center !important;
+    text-align:center !important;
+    transform:none !important;
+  }
+}
+
+/* Phone: keep current positioning, make dropdown more square */
+@media (max-width:560px){
+  .site-nav{
+    border-radius:0 0 2px 2px !important;
+  }
+}
+
