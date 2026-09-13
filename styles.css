@@ -3799,3 +3799,13 @@ h1,h2,h3,p{margin-top:0}
     flex-direction:row-reverse !important;
   }
 }
+
+/* ==========================================================
+   PHONE ONLY — HERO SUPPORTING TEXT
+   Slightly larger for readability without competing with H1.
+   ========================================================== */
+@media (max-width:560px){
+  .hero p{
+    font-size:.60rem !important;
+  }
+}
