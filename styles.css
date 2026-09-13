@@ -2681,3 +2681,190 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   DESKTOP VISUAL SCALE — MATCH APPROVED LIVE SERVER VIEW
+   Desktop only (851px+). Tablet and phone remain untouched.
+   ========================================================== */
+@media (min-width:851px){
+
+  .site-header{
+    min-height:68px !important;
+    padding-top:8px !important;
+    padding-bottom:8px !important;
+  }
+
+  .future-brand-logo{
+    width:103px !important;
+  }
+
+  .site-nav{
+    gap:30px !important;
+  }
+
+  .site-nav a{
+    font-size:.9rem !important;
+  }
+
+  .site-nav .nav-button{
+    font-size:.9rem !important;
+    padding:11px 19px !important;
+  }
+
+  .hero{
+    min-height:375px !important;
+  }
+
+  .hero h1{
+    font-size:1.875rem !important;
+  }
+
+  .hero p{
+    font-size:1.1rem !important;
+    margin-bottom:23px !important;
+  }
+
+  .hero .button{
+    font-size:.9rem !important;
+    padding:12px 25px !important;
+  }
+
+  .space-copy{
+    min-height:130px !important;
+    padding-top:16px !important;
+    padding-bottom:16px !important;
+  }
+
+  .space-copy h2{
+    font-size:1rem !important;
+    margin-bottom:6px !important;
+  }
+
+  .space-copy p{
+    font-size:.975rem !important;
+  }
+
+  .space-copy .service-dash{
+    width:25px !important;
+    height:2px !important;
+    margin-bottom:10px !important;
+  }
+
+  .section-title h2{
+    font-size:1.125rem !important;
+  }
+
+  .what-card{
+    padding-top:13px !important;
+    padding-bottom:13px !important;
+  }
+
+  .line-icon{
+    font-size:2.375rem !important;
+    margin-bottom:10px !important;
+  }
+
+  .what-card h3{
+    font-size:.875rem !important;
+    margin-bottom:6px !important;
+  }
+
+  .what-card p{
+    font-size:.975rem !important;
+  }
+
+  .create-spaces-icon{
+    transform:scale(1.2) !important;
+    margin-bottom:12px !important;
+  }
+
+  .reset-level-card{
+    min-height:138px !important;
+    padding-top:23px !important;
+    padding-bottom:23px !important;
+  }
+
+  .reset-level-icon{
+    font-size:2.25rem !important;
+  }
+
+  .reset-level-card span{
+    font-size:.79rem !important;
+  }
+
+  .reset-level-card p{
+    font-size:.975rem !important;
+  }
+
+  .cta-strip{
+    padding-top:18px !important;
+    padding-bottom:18px !important;
+  }
+
+  .cta-strip h2{
+    font-size:1.25rem !important;
+  }
+
+  .cta-strip p{
+    font-size:.95rem !important;
+  }
+
+  .process-step > span{
+    width:35px !important;
+    height:35px !important;
+    font-size:.84rem !important;
+  }
+
+  .process-step h3{
+    font-size:.975rem !important;
+  }
+
+  .process-step p{
+    font-size:.95rem !important;
+  }
+
+  .faq-list summary{
+    font-size:.775rem !important;
+  }
+
+  .faq-list details p{
+    font-size:.95rem !important;
+  }
+
+  .eyebrow{
+    font-size:.84rem !important;
+  }
+
+  .about-panel h2,
+  .about-panel > p:not(.eyebrow){
+    font-size:.95rem !important;
+  }
+
+  .badge{
+    font-size:.79rem !important;
+  }
+
+  .request-intro{
+    font-size:.925rem !important;
+  }
+
+  .reset-form label span{
+    font-size:.85rem !important;
+  }
+
+  .reset-form input,
+  .reset-form select,
+  .reset-form textarea{
+    font-size:.925rem !important;
+    padding:9px 10px !important;
+  }
+
+  .site-footer{
+    padding-top:14px !important;
+    padding-bottom:14px !important;
+  }
+
+  .site-footer p{
+    font-size:.75rem !important;
+  }
+}
+
