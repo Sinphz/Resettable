@@ -3195,3 +3195,39 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   SLIDE-OUT MENU CLOSE FIX
+   Keep the X button above the drawer so it always remains tappable.
+   ========================================================== */
+@media (max-width:850px){
+
+  .menu-toggle[aria-expanded="true"]{
+    position:fixed !important;
+    top:20px !important;
+    right:18px !important;
+    z-index:1100 !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    width:40px !important;
+    height:40px !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    color:#fff !important;
+    background:transparent !important;
+    border:0 !important;
+  }
+
+  .site-nav{
+    z-index:1050 !important;
+  }
+
+  body:has(.site-nav.open)::before{
+    z-index:1040 !important;
+  }
+}
+
