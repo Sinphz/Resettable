@@ -2617,3 +2617,24 @@ h1,h2,h3,p{margin-top:0}
   }
 }
 
+/* ==========================================================
+   TABLET ONLY — FINAL MENU + DROPDOWN ALIGNMENT
+   Desktop and phone remain untouched.
+   1) Nudge Menu slightly further left.
+   2) Align dropdown links/button beneath Menu's right edge.
+   ========================================================== */
+@media (min-width:561px) and (max-width:850px){
+  .menu-toggle{
+    transform:translateX(-40px) !important;
+  }
+
+  .site-nav{
+    padding-right:calc(2vw + 40px) !important;
+  }
+
+  .site-nav a,
+  .site-nav .nav-button{
+    align-self:flex-end !important;
+  }
+}
+
