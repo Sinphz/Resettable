@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description" content="Resettable provides home organisation, decluttering and practical reset services for homes, outdoor spaces, workspaces and organisations across Islington and North London.">
+  <meta name="theme-color" content="#123b27">
+  <title>Resettable | Organisation & Decluttering in Islington & North London</title>
+  <link rel="canonical" href="https://resettable.co.uk/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261011-intro-offer">
+</head>
+
+<body>
+<header class="site-header">
+  <a class="brand back-to-top" href="#top" aria-label="Resettable home">
+    <img src="assets/resettable-future-logo.png" alt="Resettable" class="future-brand-logo">
+  </a>
+
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+  <nav class="site-nav" id="site-nav">
+    <a href="#top">Home</a>
+    <a href="#services">Services</a>
+    <a href="#process">How it works</a>
+    <a href="#faq">FAQs</a>
+    <a class="nav-button" href="#request">Request a Reset</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy reveal">
+      <h1>A calmer space starts with a <em>reset.</em></h1>
+      <p>Declutter. Organise. Create spaces that work for you.</p>
+      <a class="button dark-button" href="#request">Request a Reset</a>
+    </div>
+
+  </section>
+
+  <!-- WHAT RESETTABLE DOES -->
+  <section class="space-cards-wrap" id="services">
+    <div class="space-cards">
+      <a class="space-card reveal" href="#request">
+        <div class="space-image home"></div>
+        <div class="space-copy">
+          <h2>Home</h2>
+          <span class="service-dash" aria-hidden="true"></span>
+          <p>Living spaces, bedrooms, kitchens, cupboards &amp; storage</p>
+        </div>
+      </a>
+
+      <a class="space-card reveal" href="#request">
+        <div class="space-image outdoor"></div>
+        <div class="space-copy">
+          <h2>Outdoor</h2>
+          <span class="service-dash" aria-hidden="true"></span>
+          <p>Gardens, sheds, garages &amp; outdoor spaces</p>
+        </div>
+      </a>
+
+      <a class="space-card reveal" href="#request">
+        <div class="space-image workspace"></div>
+        <div class="space-copy">
+          <h2>Workspaces &amp; Organisations</h2>
+          <span class="service-dash" aria-hidden="true"></span>
+          <p>Home offices, offices, storage areas &amp; shared spaces</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- WHAT WE CAN HELP WITH -->
+  <section class="what-we-do">
+    <div class="section-title reveal">
+      <h2>What We Can Help With</h2>
+    </div>
+
+    <div class="what-grid">
+      <article class="what-card reveal">
+        <div class="line-icon">⌂</div>
+        <h3>Declutter</h3>
+        <p>We remove what you don't need.</p>
+      </article>
+
+      <article class="what-card reveal">
+        <div class="line-icon">▦</div>
+        <h3>Organise</h3>
+        <p>We put everything in the right place.</p>
+      </article>
+
+      <article class="what-card reveal">
+        <div class="line-icon service-icon-svg" aria-hidden="true">
+          <svg viewBox="0 0 32 32" focusable="false"><path d="m4 10 12-6 12 6-12 6-12-6Z"></path><path d="M4 10v13l12 6 12-6V10M16 16v13M10 7l12 6"></path></svg>
+        </div>
+        <h3>Packing &amp; Unpacking</h3>
+        <p>We make moving and settling in easier.</p>
+      </article>
+
+      <article class="what-card reveal">
+        <div class="line-icon service-icon-svg" aria-hidden="true">
+          <svg viewBox="0 0 32 32" focusable="false"><path d="M25 11a10 10 0 0 0-17-3L5 11M5 5v6h6M7 21a10 10 0 0 0 17 3l3-3m0 6v-6h-6"></path></svg>
+        </div>
+        <h3>Ongoing Support</h3>
+        <p>We help you maintain organised spaces.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CHOOSE YOUR RESET -->
+  <section class="reset-levels">
+    <div class="section-title reveal">
+      <h2>Choose Your Reset</h2>
+    </div>
+
+    <div class="reset-level-grid">
+      <a class="reset-level-card reveal reset-choice-link" href="#request" data-reset-choice="Quick Reset">
+        <div class="reset-level-icon">◷</div>
+        <div>
+          <span>Quick Reset</span>
+          <p>For smaller spaces or jobs that need a focused tidy, declutter or organisation session.</p>
+        </div>
+      </a>
+
+      <a class="reset-level-card reveal reset-choice-link" href="#request" data-reset-choice="Full Reset">
+        <div class="reset-level-icon">⌂</div>
+        <div>
+          <span>Full Reset</span>
+          <p>For larger spaces or projects that need more time, sorting and a complete organisational reset.</p>
+        </div>
+      </a>
+    </div>
+    <p class="reset-quote">Every reset is tailored to your space and needs. Get in touch for a personalised quote.</p>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip reveal">
+    <div class="cta-icon">▣</div>
+    <div>
+      <h2>Ready for a fresh start?</h2>
+      <p>Let's create a space that works for you.</p>
+    </div>
+    <a class="button light-button" href="#request">Request a Reset</a>
+  </section>
+
+  <!-- HOW IT WORKS + FAQ -->
+  <section class="process-faq-wrap">
+    <div class="process-column" id="process">
+      <div class="section-title left reveal">
+        <h2>How It Works</h2>
+      </div>
+
+      <div class="process-steps">
+        <article class="process-step reveal">
+          <span>1</span>
+          <div>
+            <h3>Get in touch</h3>
+            <p>Request a Reset using the form below.</p>
+          </div>
+        </article>
+
+        <article class="process-step reveal">
+          <span>2</span>
+          <div>
+            <h3>We chat</h3>
+            <p>We'll discuss your space and what you need.</p>
+          </div>
+        </article>
+
+        <article class="process-step reveal">
+          <span>3</span>
+          <div>
+            <h3>We reset</h3>
+            <p>I'll get to work transforming your space.</p>
+          </div>
+        </article>
+
+        <article class="process-step reveal">
+          <span>4</span>
+          <div>
+            <h3>Enjoy</h3>
+            <p>More space, more time, less stress.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="faq-column" id="faq">
+      <div class="section-title left reveal">
+        <h2>FAQs</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <details>
+          <summary>What areas do you cover?</summary>
+          <p>Resettable is based in Islington and works across North London and surrounding areas.</p>
+        </details>
+
+        <details>
+          <summary>What's the difference between a Quick Reset and a Full Reset?</summary>
+          <p>A Quick Reset is best for smaller, focused jobs. A Full Reset is better for larger or more involved spaces that need deeper sorting and organisation.</p>
+        </details>
+
+        <details>
+          <summary>How long does a reset take?</summary>
+          <p>It depends on the size and condition of the space. We can discuss this before the reset so you know what to expect.</p>
+        </details>
+
+        <details>
+          <summary>Do you provide products or storage solutions?</summary>
+          <p>Where useful, practical storage solutions can be discussed as part of the reset.</p>
+        </details>
+
+        <details>
+          <summary>Is my home or workspace in safe hands?</summary>
+          <p>Yes. Resettable takes a practical, respectful and judgement-free approach, and is DBS checked.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + REQUEST MERGED -->
+  <section class="about-request" id="request">
+    <div class="about-panel reveal">
+      <p class="eyebrow">About Resettable</p>
+      <h2>Feeling overwhelmed by your space? Sometimes the hardest part is knowing where to start.</h2>
+      <p>Resettable offers practical, judgement-free organisation and decluttering for homes, outdoor spaces and workspaces, helping you create spaces that work better for you.</p>
+      <p class="about-signoff"> With Resettable you can enjoy more time, less stress and a fresh start.</p>
+
+      <div class="about-badges">
+        <div class="badge">✓ <span>DBS Checked</span></div>
+        <div class="badge">
+          <svg class="location-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+            <circle cx="12" cy="10" r="2.5"></circle>
+          </svg>
+          <span>Based in Islington<br>Serving North London</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <div class="request-panel reveal">
+      <p class="eyebrow">Request Your Reset</p>
+      <p class="request-intro">Tell me about your space and what you need help with.</p>
+
+      <form action="https://formspree.io/f/mnpalzwv" method="POST" class="reset-form">
+        <input type="hidden" name="_subject" value="New Resettable enquiry">
+
+        <div class="form-row">
+          <label>
+            <span>Your Name</span>
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+
+          <label>
+            <span>Email Address</span>
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+        </div>
+
+        <label>
+          <span>What type of space do you need help with?</span>
+          <select name="space" required>
+            <option value="">Choose an option</option>
+            <option>Home</option>
+            <option>Outdoor</option>
+            <option>Workspaces & Organisations</option>
+            <option>Something else</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Which reset are you interested in?</span>
+          <select name="reset_level">
+            <option value="">Not sure yet</option>
+            <option>Quick Reset</option>
+            <option>Full Reset</option>
+          </select>
+        </label>
+
+<label>
+  <span>Tell me about your reset</span>
+  <textarea name="message" rows="4"></textarea>
+</label>
+
+<label>
+  <span>How did you hear about Resettable?</span>
+  <select name="referral_source">
+    <option value="">Choose an option</option>
+    <option>Google</option>
+    <option>Facebook</option>
+    <option>Instagram</option>
+    <option>Nextdoor</option>
+    <option>Flyer</option>
+    <option>Recommendation / word of mouth</option>
+    <option>Other</option>
+  </select>
+</label>
+
+<button class="button dark-button submit-button" type="submit">Send Request</button>
+      </form>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/resettableco/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle class="dot" cx="17.5" cy="6.5" r="1"></circle>
+          </svg>
+        </a>
+
+        <a href="https://facebook.com/resettable" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <g transform="translate(2.1 2.1) scale(0.825)"><path d="M13.5 20v-7h2.5l.4-3h-2.9V8.4c0-.9.3-1.6 1.7-1.6H16.6V4.1c-.6-.1-1.3-.2-2-.2-2.7 0-4.5 1.6-4.5 4.6V10H8v3h2.1v7"></path></g>
+          </svg>
+        </a>
+
+        <a href="https://wa.me/442080885636" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.2 3.8A11 11 0 0 0 2.9 17.1L2 22l5-1.3A11 11 0 0 0 20.2 3.8Z"></path>
+            <path d="M8.4 7.2c.2-.4.4-.5.8-.5h.5c.2 0 .4.1.5.4l.8 2c.1.3 0 .5-.1.7l-.6.8c-.2.2-.2.4 0 .7.7 1.2 1.7 2.2 2.9 2.9.3.2.5.2.7 0l.9-1c.2-.2.4-.3.7-.2l2 .9c.3.1.4.3.4.5 0 .4-.2 1.8-1.2 2.4-.7.4-1.6.6-2.6.3-1-.3-2.4-.9-4-2.3-1.4-1.2-2.4-2.7-3-4.1-.6-1.3-.6-2.5-.3-3.2.2-.5.5-1 .6-1.3Z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<dialog class="intro-offer" id="intro-offer" aria-labelledby="intro-offer-title" aria-describedby="intro-offer-description">
+  <div class="intro-offer-card">
+    <button class="intro-offer-close" type="button" aria-label="Close offer">&times;</button>
+    <p class="intro-offer-eyebrow">A welcome from Resettable</p>
+    <h2 id="intro-offer-title">A Fresh Start for £60</h2>
+    <p id="intro-offer-description">Enjoy our special introductory offer: a 2-hour reset for £60. Take the first step towards a more organised space.</p>
+    <a class="button light-button intro-offer-cta" href="#request">Request Your Reset</a>
+  </div>
+</dialog>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Resettable. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
