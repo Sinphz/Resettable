@@ -122,6 +122,18 @@ h1,h2,h3,p{margin-top:0}
 .site-footer{padding:11px 8vw;background:var(--deep);color:#fff;text-align:center}
 .site-footer p{margin:0;font-size:.6rem}
 
+/* Introductory offer popup */
+.intro-offer{width:min(92vw,490px);max-width:none;padding:0;border:0;border-radius:12px;background:transparent;color:var(--ink);box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.intro-offer::backdrop{background:rgba(12,28,19,.62);backdrop-filter:blur(2px)}
+.intro-offer-card{position:relative;padding:44px 42px 40px;border:1px solid rgba(255,255,255,.28);border-radius:12px;background:var(--deep);color:#fff;text-align:center}
+.intro-offer-close{position:absolute;top:12px;right:14px;display:grid;place-items:center;width:38px;height:38px;border:0;border-radius:50%;background:transparent;color:#fff;font-size:1.8rem;line-height:1;cursor:pointer}
+.intro-offer-close:hover,.intro-offer-close:focus-visible{background:rgba(255,255,255,.13)}
+.intro-offer-eyebrow{margin:0 0 10px;color:var(--sage-light);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.intro-offer-card h2{margin:0 0 13px;color:#fff;font-family:"Playfair Display",serif;font-size:clamp(1.65rem,5vw,2.15rem);font-weight:500;line-height:1.2}
+.intro-offer-card>p:not(.intro-offer-eyebrow){max-width:350px;margin:0 auto 24px;color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.6}
+.intro-offer-cta{min-height:46px;padding:12px 22px;background:var(--sage-light);color:var(--deep);font-size:.76rem}
+.intro-offer-cta:hover,.intro-offer-cta:focus-visible{background:#fff}
+
 /* Animation */
 .reveal{opacity:0;transform:translateY(10px);transition:opacity .45s ease,transform .45s ease}
 .reveal.visible{opacity:1;transform:none}
@@ -162,6 +174,11 @@ h1,h2,h3,p{margin-top:0}
 
 /* Phone */
 @media(max-width:560px){
+  .intro-offer{width:calc(100vw - 32px)}
+  .intro-offer-card{padding:42px 24px 30px}
+  .intro-offer-card>p:not(.intro-offer-eyebrow){font-size:.88rem}
+  .intro-offer-cta{width:100%}
+
   .site-header{padding:8px 5vw}
   .brand-logo{width:76px}
 
