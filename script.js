@@ -81,7 +81,7 @@ const offerDialog = document.querySelector('#intro-offer');
 const offerDismissedKey = 'resettable-intro-offer-dismissed';
 
 if (OFFER_SCOPE_CONFIRMED && offerDialog && !sessionStorage.getItem(offerDismissedKey)) {
-  offerDialog.showModal();
+  window.setTimeout(() => offerDialog.showModal(), 10_000);
 }
 
 if (offerDialog) {
