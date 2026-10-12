@@ -76,7 +76,7 @@ if (year) year.textContent = new Date().getFullYear();
 /*
  * The £60 introductory offer covers a 2-hour reset.
  */
-const OFFER_SCOPE_CONFIRMED = true;
+const OFFER_SCOPE_CONFIRMED = false;
 const offerDialog = document.querySelector('#intro-offer');
 const offerDismissedKey = 'resettable-intro-offer-dismissed';
 
