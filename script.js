@@ -72,33 +72,3 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
-
-/*
- * The £60 introductory offer covers a 2-hour reset.
- */
-const OFFER_SCOPE_CONFIRMED = false;
-const offerDialog = document.querySelector('#intro-offer');
-const offerDismissedKey = 'resettable-intro-offer-dismissed';
-
-if (OFFER_SCOPE_CONFIRMED && offerDialog && !sessionStorage.getItem(offerDismissedKey)) {
-  window.setTimeout(() => offerDialog.showModal(), 10_000);
-}
-
-if (offerDialog) {
-  const dismissOffer = () => {
-    sessionStorage.setItem(offerDismissedKey, 'true');
-    offerDialog.close();
-  };
-
-  offerDialog.querySelector('.intro-offer-close')?.addEventListener('click', dismissOffer);
-  offerDialog.addEventListener('click', event => {
-    if (event.target === offerDialog) dismissOffer();
-  });
-  offerDialog.querySelector('.intro-offer-cta')?.addEventListener('click', () => {
-    sessionStorage.setItem(offerDismissedKey, 'true');
-    offerDialog.close();
-  });
-  offerDialog.addEventListener('cancel', () => {
-    sessionStorage.setItem(offerDismissedKey, 'true');
-  });
-}
