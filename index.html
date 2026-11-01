@@ -17,10 +17,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261012-declutter-icon">
+  <link rel="stylesheet" href="styles.css?v=20261101-phase4-final">
+  <noscript><style>
+    .reveal{opacity:1;transform:none}
+    @media(max-width:850px){
+      .site-header{flex-wrap:wrap}
+      .menu-toggle{display:none !important}
+      .site-nav{position:static !important;transform:none !important;visibility:visible !important;pointer-events:auto !important;width:100% !important;max-width:none !important;height:auto !important;padding:12px 0 !important;box-shadow:none !important}
+      .site-nav::before{display:none !important}
+    }
+  </style></noscript>
 </head>
 
-<body>
+<body class="phase4-site page-home">
+<a class="site-skip-link" href="#top">Skip to main content</a>
 <header class="site-header">
   <a class="brand back-to-top" href="#top" aria-label="Resettable home">
     <img src="assets/resettable-future-logo.png" alt="Resettable" class="future-brand-logo">
@@ -33,11 +43,12 @@
     <a href="#services">Services</a>
     <a href="#process">How it works</a>
     <a href="#faq">FAQs</a>
+    <a href="get-the-app.html">Resettable App</a>
     <a class="nav-button" href="#request">Request a Reset</a>
   </nav>
 </header>
 
-<main id="top">
+<main id="top" tabindex="-1">
 
   <!-- HERO -->
   <section class="hero">
@@ -243,7 +254,6 @@
       <p class="about-signoff">With Resettable, you can enjoy more time, less stress and a fresh start.</p>
 
       <div class="about-badges">
-        <div class="badge">✓ <span>DBS Checked</span></div>
         <div class="badge">
           <svg class="location-icon" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path>
@@ -317,6 +327,39 @@
 <button class="button dark-button submit-button" type="submit">Send Request</button>
       </form>
 
+    </div>
+  </section>
+
+  <!-- Everyday app companion -->
+  <section class="app-intro app-intro-compact" id="resettable-app" aria-labelledby="app-intro-title">
+    <div class="app-intro-heading">
+      <svg class="app-intro-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <rect x="10" y="4" width="28" height="40" rx="7"></rect>
+        <path d="m17 23 5 5 10-12M21 37h6"></path>
+      </svg>
+      <h2 id="app-intro-title">Get the Resettable App</h2>
+    </div>
+    <p class="app-intro-description">A little support, whenever you need it. Create checklists, set goals and track your progress at your own pace.</p>
+    <div class="app-intro-actions">
+      <a class="app-intro-button" href="get-the-app.html">Learn More</a>
+      <a class="app-intro-button" href="https://sinphz.github.io/resettable-app/">Open the App</a>
+    </div>
+    <p class="app-intro-support">Free to use in your browser · Install on your phone</p>
+  </section>
+
+</main>
+
+
+
+<footer class="site-footer site-footer-contact">
+  <div class="footer-columns">
+    <div class="footer-contact">
+      <h2>Get in Touch</h2>
+      <p><a href="mailto:enquiries@resettable.co.uk">enquiries@resettable.co.uk</a></p>
+      <p><a href="tel:+442080885636">Telephone: +44 208 088 5636</a></p>
+    </div>
+    <div class="footer-social">
+      <h2>Follow Us</h2>
       <div class="social-icons">
         <a href="https://www.instagram.com/resettableco/" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -341,16 +384,10 @@
         </a>
       </div>
     </div>
-  </section>
-
-</main>
-
-
-
-<footer class="site-footer">
-  <p>© <span id="year"></span> Resettable. All rights reserved.</p>
+  </div>
+  <p class="footer-copyright">© 2026 Resettable. All rights reserved.</p>
 </footer>
 
-<script src="script.js?v=20261012-popup-disabled"></script>
+<script src="script.js?v=20261101-phase4-final"></script>
 </body>
 </html>

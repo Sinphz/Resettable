@@ -3819,3 +3819,103 @@ h1,h2,h3,p{margin-top:0}
 @media(max-width:560px){.service-icon-svg img{width:1.3rem;height:1.3rem}}
 .reset-quote{max-width:760px;margin:14px auto 0;color:var(--muted);font-size:.72rem;line-height:1.5;text-align:center}
 @media(max-width:560px){.reset-quote{margin-top:12px;padding:0 4px;font-size:.68rem}}
+
+/* Phase 4 — compact website app introduction */
+.app-intro{
+  margin:28px 8vw;
+  padding:28px;
+  border:1px solid var(--sage);
+  border-radius:12px;
+  background:var(--cream);
+  color:var(--ink);
+  font-size:1rem;
+  line-height:1.6;
+  scroll-margin-top:110px;
+}
+.app-intro-heading{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.app-intro-icon{flex:0 0 48px;width:48px;height:48px;fill:none;stroke:var(--deep);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.app-intro .app-intro-eyebrow{margin:0 0 4px;color:var(--deep);font-size:.75rem;font-weight:700;letter-spacing:.08em}
+.app-intro h2{margin:0;color:var(--deep);font-family:"Playfair Display",serif;font-size:1.6rem;font-weight:500;line-height:1.25}
+.app-intro > p{max-width:70ch;margin:0 0 12px}
+.app-intro .app-intro-description{font-weight:500}
+.app-intro-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin:4px 0 12px;padding:10px 20px;border:1px solid var(--deep);border-radius:7px;color:var(--deep);font-weight:700;text-align:center}
+.app-intro-button:hover{background:var(--deep);color:var(--paper)}
+.app-intro .app-intro-browser{margin-bottom:20px}
+.app-intro-install{border-top:1px solid var(--line);padding-top:16px}
+.app-intro-note{margin:0 0 12px;max-width:75ch}
+.app-intro details{border-top:1px solid var(--line)}
+.app-intro summary{min-height:44px;padding:10px 0;cursor:pointer;color:var(--deep);font-weight:700}
+.app-intro ol{margin:0 0 16px;padding-left:24px}
+.app-intro li + li{margin-top:6px}
+.app-intro a:focus-visible,.app-intro summary:focus-visible{outline:3px solid var(--deep);outline-offset:4px}
+
+/* Keep the longer navigation label readable near the drawer breakpoint. */
+@media (min-width:851px) and (max-width:1100px){
+  .site-header{padding-left:24px !important;padding-right:24px !important}
+  .site-header .site-nav{flex-wrap:wrap;justify-content:flex-end;gap:8px 12px !important;max-width:calc(100% - 125px) !important}
+}
+@media (max-width:850px){
+  .app-intro{margin:24px 5vw;padding:24px;scroll-margin-top:110px}
+  .site-nav a[href="#resettable-app"]{white-space:normal;overflow-wrap:break-word}
+}
+@media (max-width:560px){
+  .app-intro{padding:20px}
+  .app-intro-heading{gap:12px}
+  .app-intro h2{font-size:1.4rem}
+  .app-intro-button{width:100%}
+}
+
+/* Final Phase 4: compact app panel and dedicated information page. */
+.app-intro-compact{padding:24px}
+.app-intro-compact .app-intro-heading{margin-bottom:12px}
+.app-intro-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.app-intro-actions .app-intro-button{margin:0}
+.app-intro .app-intro-support{margin:12px 0 0;font-size:.85rem}
+.app-intro h1{margin:0;color:var(--deep);font-family:"Playfair Display",serif;font-size:clamp(1.6rem,3vw,2rem);font-weight:500;line-height:1.25}
+.app-page{max-width:900px;margin:32px auto}
+.app-benefits{padding-left:24px;margin:16px 0}
+.app-benefits li + li{margin-top:10px}
+.app-page .app-intro-install{margin-top:24px}
+.app-page-services{margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.app-page-services h2{font-size:1.25rem}
+.app-page-services .button{min-height:44px}
+.app-home-link{display:inline-block;margin-top:16px;text-decoration:underline;text-underline-offset:3px}
+.phase4-site [id]{scroll-margin-top:110px}
+.site-skip-link{position:fixed;top:8px;left:16px;z-index:1100;padding:12px 18px;background:var(--paper);color:var(--deep);transform:translateY(-160%);border:2px solid var(--deep);border-radius:7px}
+.site-skip-link:focus{transform:none}
+.phase4-site .site-nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:5px}
+.phase4-site a:focus-visible,.phase4-site button:focus-visible,.phase4-site summary:focus-visible{outline:3px solid var(--sage);outline-offset:4px}
+@media(max-width:1000px){.app-page{margin:28px 5vw}}
+@media(max-width:850px){
+ .phase4-site .site-nav:not(.open){visibility:hidden;pointer-events:none}
+ .phase4-site .site-nav.open{visibility:visible}
+ .phase4-site .site-nav > a{min-height:44px;white-space:normal}
+ .phase4-site .menu-toggle{min-width:44px;min-height:44px}
+}
+@media(max-width:560px){
+ .app-intro-compact{padding:20px}
+ .app-intro-actions{flex-direction:column;align-items:stretch}
+ .app-intro-actions > a{width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .phase4-site .reveal{transition:none}
+}
+
+/* Contact details in the existing dark-green footer. */
+.site-footer-contact{padding:18px 8vw;text-align:left}
+.site-footer-contact .footer-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px}
+.site-footer-contact h2{margin:0 0 6px;font-size:1rem;font-weight:700}
+.site-footer-contact .footer-contact p{margin:0 0 6px;font-size:.8rem !important;line-height:1.6}
+.site-footer-contact .footer-contact{min-width:0}
+.site-footer-contact .footer-social{justify-self:end;min-width:0}
+.site-footer-contact .footer-contact p a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.site-footer-contact .social-icons{margin-top:6px}
+.site-footer-contact .social-icons a{width:44px;height:44px}
+.site-footer-contact .social-icons svg{stroke:var(--sage-light)}
+.site-footer-contact .social-icons .dot{fill:var(--sage-light)}
+.site-footer-contact .footer-copyright{margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,.2);text-align:center}
+@media(max-width:560px){
+  .site-footer-contact .footer-columns{grid-template-columns:minmax(0,1fr);gap:18px}
+  .site-footer-contact .footer-social{justify-self:start}
+}
