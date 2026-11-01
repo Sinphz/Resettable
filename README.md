@@ -63,3 +63,21 @@ repository remain unchanged. Ignored `future/` files are unrelated and untouched
 The final Phase 4 website design is approved for publication from `main` through
 the existing GitHub Pages workflow. Preserve all backup branches and keep the
 separate Resettable app repository, Firebase and domain settings unchanged.
+
+## Temporary app promotion pause
+
+App promotion is temporarily hidden on both pages using `hidden` and
+`data-app-promotion-hidden` attributes. This covers the Resettable App navigation
+links, the homepage app panel, and the dedicated app page's promotional section
+(including its Open the App link). All original markup, wording, URLs and app
+styles remain in place. The dedicated page still exists at its original URL,
+but its promotional content is hidden; this is not access control for the app.
+The app information page is temporarily omitted from `sitemap.xml`.
+
+To restore, remove both attributes from the four marked elements, remove the
+temporary CSS rule at the end of `styles.css`, and restore this sitemap entry:
+`<url><loc>https://resettable.co.uk/get-the-app.html</loc></url>`.
+The earlier Phase 4 description above documents the layout to restore.
+
+No services, photos, contact details, form, application JavaScript, app repository
+or Firebase configuration were changed.
