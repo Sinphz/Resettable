@@ -3919,3 +3919,24 @@ h1,h2,h3,p{margin-top:0}
   .site-footer-contact .footer-columns{grid-template-columns:minmax(0,1fr);gap:18px}
   .site-footer-contact .footer-social{justify-self:start}
 }
+
+/* Use a high-contrast green focus ring in the light app sections. */
+.phase4-site .app-intro a:focus-visible,
+.phase4-site .app-intro summary:focus-visible{outline-color:var(--deep)}
+
+/* Keep app integration controls readable against the existing dark panel. */
+@media(prefers-color-scheme:dark){
+  .app-intro h1,
+  .app-intro h2,
+  .app-intro .app-intro-eyebrow,
+  .app-intro summary{color:var(--sage-light)}
+  .app-intro .app-intro-icon{stroke:var(--sage-light)}
+  .app-intro .app-intro-button{color:var(--sage-light);border-color:var(--sage-light)}
+  .app-intro .app-intro-button:hover,
+  .app-intro .dark-button{background:var(--sage-light);color:var(--deep)}
+  .app-intro .app-intro-install,
+  .app-intro details,
+  .app-intro .app-page-services{border-top-color:var(--sage)}
+  .phase4-site .app-intro a:focus-visible,
+  .phase4-site .app-intro summary:focus-visible{outline-color:var(--sage-light)}
+}
